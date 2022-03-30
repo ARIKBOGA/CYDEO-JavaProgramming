@@ -2,6 +2,7 @@ package day33_Statics.PracticeTasks;
 
 public class TestObjects {
     public static void main(String[] args) {
+
         // CydeoStudent task
         CydeoStudent cs1 = new CydeoStudent("Burak", 32, 'M', 3403, '?', "EU08", 30, false);
         cs1.attendClass();
@@ -56,6 +57,26 @@ public class TestObjects {
 
         System.out.println("\n=========================================\n");
 
+        // Address task
+        Address a1 = new Address("7925 Jones Branch Dr", "McLean", "VA", 22012);
+        System.out.println(a1);
 
+
+        System.out.println("\n=========================================\n");
+
+        // Dog task
+        Dog d1 = new Dog("Golden", "Brown", "Large", 'F', 3);
+        d1.eat();
+        d1.play();
+        d1.sleep();
+        System.out.println(d1);
+
+
+        System.out.println("\n=========================================\n");
+
+        // Car task
+        Car car1 = new Car("Mercedes", "E250", "Black", 2022, 55000);
+        car1.drive();
+        System.out.println(car1);
     }
 }
