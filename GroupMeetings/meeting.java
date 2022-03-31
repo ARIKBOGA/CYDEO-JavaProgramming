@@ -5,9 +5,9 @@ public class meeting {
 
 
     public static void main(String[] args) {
-        System.out.println("Java" + 10+20); //line 1
-        System.out.println("Java" + (10-20)); //line 2
-        System.out.println("Java" + 10*20); //line 3
+        System.out.println("Java" + 10 + 20); //line 1
+        System.out.println("Java" + (10 - 20)); //line 2
+        System.out.println("Java" + 10 * 20); //line 3
 
 
         int x = 7575245;
