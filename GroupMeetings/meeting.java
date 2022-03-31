@@ -5,6 +5,10 @@ public class meeting {
 
 
     public static void main(String[] args) {
+        System.out.println("Java" + 10+20); //line 1
+        System.out.println("Java" + (10-20)); //line 2
+        System.out.println("Java" + 10*20); //line 3
+
 
         int x = 7575245;
         int y = 3245657;
@@ -17,6 +21,7 @@ public class meeting {
 
         String s1 = "abc";
         String s2 = "abc";
+        System.out.println(s1.chars().distinct().count());
         System.out.println("s1==s2 is:" + s1 == s2);   // "s1==s2 is:abc"==s2
 
         int plaka;

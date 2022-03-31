@@ -29,3 +29,8 @@ We do not have to answer as if we were in an interview, it is enough if we share
 Please make sure that your answers do not exceed two minutes in order to better time managing.
 
 I hope it would help us for gaining some experience.
+
+I think any of us would have thought wrong like you when he saw this question for the first time.
+For the first line we know that result is Java1020
+For the second line the java will be executed respectively "Java"+"10 ->"Java10"-20 -> Compile error
+For the third line "We must know the Operator Precedence in Java": https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
