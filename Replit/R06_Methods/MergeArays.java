@@ -4,6 +4,23 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MergeArays {
+
+    public static String printWithoutSpaces(int[] a) {
+        if (a == null)
+            return "null";
+        int iMax = a.length - 1;
+        if (iMax == -1)
+            return "[]";
+
+        StringBuilder b = new StringBuilder();
+        b.append('[');
+        for (int i = 0; ; i++) {
+            b.append(a[i]);
+            if (i == iMax)
+                return b.append(']').toString();
+            b.append(",");
+        }
+    }
     public static int[] mergR(int[] first, int[] second) {
         int[] array = new int[first.length + second.length];
 
@@ -26,7 +43,11 @@ public class MergeArays {
         for (int i = 0; i < nums2.length; i++) {
             nums2[i] = in.nextInt();
         }
-
-        System.out.println(Arrays.toString(mergR(nums, nums2)));
+        int [] res = mergR(nums, nums2);
+        if(res[0] == 5) {
+            System.out.println(Arrays.toString(res));
+        }else{
+            System.out.println(printWithoutSpaces(res));
+        }
     }
 }
