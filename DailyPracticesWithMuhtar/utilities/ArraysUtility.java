@@ -3,29 +3,8 @@ package utilities;
 import java.util.Arrays;
 
 public class ArraysUtility {
-    public static void printEachElement(int[] arr) {
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-    }
-
-    public static void printEachElement(double[] arr) {
-        for (double i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-    }
-
-    public static void printEachElement(String[] arr) {
-        for (String i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-    }
-
-    public static void printEachElement(char[] arr) {
-        for (char i : arr) {
+    public static <T>void printEachElement(T[] arr) {
+        for (T i : arr) {
             System.out.print(i + " ");
         }
         System.out.println();

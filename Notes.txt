@@ -34,3 +34,37 @@ I think any of us would have thought wrong like you when he saw this question fo
 For the first line we know that result is Java1020
 For the second line the java will be executed respectively "Java"+"10 ->"Java10"-20 -> Compile error
 For the third line "We must know the Operator Precedence in Java": https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+
+
+Hello guys, I hope you're all great. Sorry for being late for the meeting info. If you are available we can study on our real interview questions again.
+
+Recording  17: Satı
+Recording  18: Nihal
+Recording  19: Serpil
+Recording  20: Zehra
+Recording  21: Ece
+Recording  22: Nefise
+Recording  23: Burak
+Recording  24: Mehmet
+Recording  25: Yusuf
+Recording  26: Kadir
+Recording  27: Salih
+Recording  28: Yasin
+Recording  29: Veysel
+
+
+And we can continue our Java studies where we left off on this website:
+https://www.qafox.com/java-for-testers-interview-questions-and-answers-part-2/
+
+
+1.What is static keyword applied for ? What is static members?
+2. What is difference between static and instance variables and static and instance method?
+    How can we check a method should be static or not?
+3. Explain the concepts of object and class
+4. What is static block? What is the difference between static block and constructor?
+5. Can a class be static?
+6. What is the advantage of static import? What is regular import-static import difference?
+7. What is the purpose and benefit of garbage collection?
+8. What kind of objects are  eligible for garbage collection?
+9.What are Access modifiers for? What do they do? Explain 4 access modifiers
+
