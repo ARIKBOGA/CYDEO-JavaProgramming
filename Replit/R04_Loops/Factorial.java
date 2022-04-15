@@ -3,12 +3,15 @@ package R04_Loops;
 import java.util.Scanner;
 
 public class Factorial {
+
+    public static int factorial(int i) { // Recursive
+        if (i == 1) return 1;
+        return i * factorial(i - 1);
+    }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        long n = scan.nextInt();
-        for (long i = n - 1; i > 0; i--) {
-            n *= i;
-        }
-        System.out.println(n);
+
+        System.out.println(factorial(scan.nextInt()));
     }
 }
