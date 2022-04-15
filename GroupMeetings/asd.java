@@ -18,5 +18,13 @@ public class asd {
 
         int x = 0;
         System.out.println(b);
+
+        int i = 10;
+        int k = 13;
+
+        i = (i + k) - (k = i);
+
+        System.out.println("i = " + i);
+        System.out.println("k = " + k);
     }
 }

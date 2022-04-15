@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-
 public class Meeting2503 {
 
     public static String isPrime(int num) {
@@ -13,7 +9,7 @@ public class Meeting2503 {
         return "prime";
     }
 
-    public static boolean isArsmstrong(int x) {
+    public static boolean isArmstrong(int x) {
         int total = 0;
         int last = x;
         while (x > 0) {
@@ -25,7 +21,7 @@ public class Meeting2503 {
     }
 
     public static void main(String[] args) {
-        System.out.println(isArsmstrong(153));
+        System.out.println(isArmstrong(153));
         System.out.println(isPrime(13));
 
         int a = 0;
