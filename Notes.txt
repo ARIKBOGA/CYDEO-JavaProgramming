@@ -68,3 +68,28 @@ https://www.qafox.com/java-for-testers-interview-questions-and-answers-part-2/
 8. What kind of objects are  eligible for garbage collection?
 9.What are Access modifiers for? What do they do? Explain 4 access modifiers
 
+
+---------------------------------------------------------------------------------------------
+
+Hello dear mates I hope you all great.
+
+Since the attandance was low during the Ramadan, I thought of leaving the soft skills questions for later.
+These are our interview practice questions just about Java. 
+We will answer them in the order on the tracking sheet.
+ 
+1.  What is the definition of inheritance?
+2.  What is a relation? Explain the “is a relation” and  “has a relation”.
+3.  What is extends keyword? What is super keyword?
+4.  Explain the types of inheritance? (Single-MultiLevel-Hierarchical)
+5.  What is the difference between ‘inheritance - creating’  and ‘inheritance – importing’?
+6.  What are the advantages and disadvantages of inheritance?
+7.  What are super class and subclass?
+8.  What can be inherited? What cannot be inherited?
+9.  What are constructor call rules in inheritance?
+10. What are the overriding rules?
+11. What is the benefit of overriding?
+12. What are the differences between Method Overloading and Method Overrriding?
+13. What is final keyword for? What is final keyword applicable for?
+14. Explain the difference of protected Access modifier from default and private?
+
+See you at the meeting.
