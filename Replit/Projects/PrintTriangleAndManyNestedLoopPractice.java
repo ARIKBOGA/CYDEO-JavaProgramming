@@ -138,5 +138,12 @@ public class PrintTriangleAndManyNestedLoopPractice {
             }                                                       //      3 3 3 3 3
             System.out.println();                                   //    4 4 4 4 4 4 4
         }                                                           //  5 5 5 5 5 5 5 5 5
+        System.out.println("\n============================\n");
+        for (int i = n; i >= 1; i--) {                                              // 15 14 13 12 11
+            for (int j = (i * (i + 1)) / 2; j > ((i * (i + 1)) / 2) - i; j--) {     // 10 9  8  7
+                System.out.print(j + (j > 9 ? " " : "  "));                         // 6  5  4
+            }                                                                       // 3  2
+            System.out.println();                                                   // 1
+        }
     }
 }
