@@ -23,7 +23,7 @@ public class EmailValidation {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in).useLocale(Locale.US);
         int n = Integer.parseInt(scan.nextLine()); // loop count
-        String regex = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}";
+        String regex = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z\\d-]+\\.)+[a-zA-Z]{2,6}";
         String email;
         Pattern pattern = Pattern.compile(regex);
         while(n-->0){
@@ -31,6 +31,5 @@ public class EmailValidation {
             Matcher matcher = pattern.matcher(email);
             System.out.println(n+1+". "+email +" : "+ matcher.matches());
         }
-        String EmailValidation;
     }
 }
