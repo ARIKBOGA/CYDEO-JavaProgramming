@@ -1,7 +1,7 @@
 package R08_OOP.DogAbstraction;
 
 public class Dog extends Animal {
-    private String breed;
+    private final String breed;
     private int humanYears;
 
     public Dog(String name, int age, String breed) {
