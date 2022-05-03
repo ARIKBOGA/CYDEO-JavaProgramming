@@ -55,7 +55,7 @@ interface: blueprint of class
 
 
 
-Abastract class vs interface: both are used for achieving abstraction
+Abstract class vs interface: both are used for achieving abstraction
 							  both can not be instantiated
 							  both can not be final
 							  both are meant to be inherited
@@ -67,7 +67,7 @@ Abastract class vs interface: both are used for achieving abstraction
 
 		  					can have constructor
 
-		  					4 access mdofiers
+		  					4 access modifiers
 
 		  	interface: one class can implement multiple interfaces
 

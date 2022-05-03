@@ -1,18 +1,5 @@
 package day44_Abstraction.animalTask;
 
-/*
-class Test{
-
-    public static void main(String[] args) {
-
-        System.out.println(new Test().getClass().getSimpleName());
-        System.out.println(new Test().getClass().getName());
-
-    }
-
-}
-*/
-
 public abstract class Animal {
 
     private String name;
