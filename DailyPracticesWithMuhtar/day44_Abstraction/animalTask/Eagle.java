@@ -1,4 +1,4 @@
-package day45_Abstraction.day44_Abstraction.animalTask;
+package day44_Abstraction.animalTask;
 
 public final class Eagle extends Animal implements WildAnimal, Flyable{
 
