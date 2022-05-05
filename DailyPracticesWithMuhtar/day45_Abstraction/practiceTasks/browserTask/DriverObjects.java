@@ -1,4 +1,4 @@
-package day45_Abstraction.tasks.browserTask;
+package day45_Abstraction.practiceTasks.browserTask;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package day45_Abstraction.tasks.browserTask;
+package day45_Abstraction.practiceTasks.browserTask;
 
 public interface SearchContext {
     void findElement(String locator);

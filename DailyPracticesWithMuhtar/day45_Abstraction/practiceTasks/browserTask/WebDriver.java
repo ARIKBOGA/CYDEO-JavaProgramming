@@ -1,4 +1,4 @@
-package day45_Abstraction.tasks.browserTask;
+package day45_Abstraction.practiceTasks.browserTask;
 
 public interface WebDriver extends SearchContext {
     void get(String url);

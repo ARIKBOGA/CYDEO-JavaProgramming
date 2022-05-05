@@ -1,4 +1,4 @@
-package day45_Abstraction.tasks.browserTask;
+package day45_Abstraction.practiceTasks.browserTask;
 
 public class RemoteWebDriver implements WebDriver, TakeScreenShot, JavaScriptExecuter {
     private final String browserName;
