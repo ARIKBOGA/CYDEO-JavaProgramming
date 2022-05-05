@@ -1,13 +1,14 @@
 package day46_Polymorphism;
 
 import day43_Abstraction.employeeTask.*;
-import day44_Abstraction.animalTask.Animal;
-import day44_Abstraction.animalTask.Cat;
-import day44_Abstraction.animalTask.Dog;
-import day44_Abstraction.animalTask.Playable;
+import day45_Abstraction.day44_Abstraction.animalTask.Animal;
+import day45_Abstraction.day44_Abstraction.animalTask.Cat;
+import day45_Abstraction.day44_Abstraction.animalTask.Dog;
+import day45_Abstraction.day44_Abstraction.animalTask.Playable;
 import day45_Abstraction.shape.*;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class PolymorphismIntro {
 
@@ -15,13 +16,13 @@ public class PolymorphismIntro {
 
         String str = "Wooden Spoon";
 
-        Integer n1 = 2;
+        int n1 = 2;
 
-        Double n2 = 5.5;
+        double n2 = 5.5;
 
-        Boolean r1 = true;
+        boolean r1 = true;
 
-        Object[] array = {str, n1, n2, r1, new Circle(4) , new Square(7)};
+        Object[] array = {str, n1, n2, r1, new Circle(4), new Square(7)};
 
         /*
 
@@ -35,11 +36,10 @@ public class PolymorphismIntro {
          */
 
 
-
-        Employee tester = new Tester("Ali",30,'M',42,"SDET",145000.00);
-        Employee developer = new Developer("Alex",28,'M',32,"Web Developer",155000.00);
-        Employee teacher = new Teacher("Angel",28,'F',22,"English Teacher",85000.00);
-        Employee driver = new Driver("Jhon",34,'M',42,"Lyft Driver",75000.00);
+        Employee tester = new Tester("Ali", 30, 'M', 42, "SDET", 145000.00);
+        Employee developer = new Developer("Alex", 28, 'M', 32, "Web Developer", 155000.00);
+        Employee teacher = new Teacher("Angel", 28, 'F', 22, "English Teacher", 85000.00);
+        Employee driver = new Driver("Jhon", 34, 'M', 42, "Lyft Driver", 75000.00);
 
         ArrayList<Person> cydeoEmployees = new ArrayList();
 
@@ -48,21 +48,26 @@ public class PolymorphismIntro {
         cydeoEmployees.add(teacher);
         cydeoEmployees.add(driver);
 
+        System.out.println(tester instanceof Person);
+
+        cydeoEmployees.stream()
+                .sorted(Comparator.comparing(p -> ((Employee) p).getId()))
+                .forEach(System.out::println);
+
 
         System.out.println("-------------------------------------------");
 
-        Employee employee = new Tester("Ali",30,'M',42,"SDET",145000.00);
+        Employee employee = new Tester("Ali", 30, 'M', 42, "SDET", 145000.00);
         employee.work();
-       // employee.bugReport();
+        // employee.bugReport();
 
         /*
+
             WebDriver driver1 = new ChromeDriver();
             WebDriver driver2 = new ChromeDriver();
 
-
             driver1.get(amazon)
             driver2.get(google)
-
 
             Animal animal = new Dog();
             animal.drink()
@@ -78,15 +83,15 @@ public class PolymorphismIntro {
         Animal animal = new Dog("Max", "Husky", 'M', 3, "Small", "White");
         animal.drink();
         animal.eat();
-       // animal.play();
-      //  animal.bark();
+        // animal.play();
+        // animal.bark();
 
 
         Playable animal2 = new Dog("Max", "Husky", 'M', 3, "Small", "White");
         System.out.println(animal2.isFriendly);
         animal2.play();
-      //  animal2.drink();
-      //  animal2.eat();
+        //  animal2.drink();
+        //  animal2.eat();
 
 
         Animal animal3 = new Cat("Max", "Husky", 'M', 3, "Small", "White");
@@ -94,18 +99,20 @@ public class PolymorphismIntro {
         Shape shape = new Circle(5);
         shape.area();
 
-      //  System.out.println( shape.getRadius());
-       // System.out.println( shape.PI);
+        // System.out.println( shape.getRadius());
+        // System.out.println( shape.PI);
 
         boolean isSquare = shape instanceof Square;
         boolean isRectangle = shape instanceof Rectangle;
         boolean isTriangle = shape instanceof Triangle;
         boolean isCircle = shape instanceof Circle;
+        boolean isShape = shape instanceof Shape;
 
         System.out.println("isSquare = " + isSquare);
         System.out.println("isTriangle = " + isTriangle);
         System.out.println("isRectangle = " + isRectangle);
         System.out.println("isCircle = " + isCircle);
+        System.out.println("isShape = " + isShape);
 
 
 

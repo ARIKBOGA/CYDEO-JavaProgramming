@@ -1,4 +1,4 @@
-package day44_Abstraction.animalTask;
+package day45_Abstraction.day44_Abstraction.animalTask;
 
 public final class Parrot extends Animal implements Playable, Flyable {
 
