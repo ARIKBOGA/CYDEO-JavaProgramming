@@ -1,10 +1,10 @@
 package day46_Polymorphism;
 
 import day43_Abstraction.employeeTask.*;
-import day45_Abstraction.day44_Abstraction.animalTask.Animal;
-import day45_Abstraction.day44_Abstraction.animalTask.Cat;
-import day45_Abstraction.day44_Abstraction.animalTask.Dog;
-import day45_Abstraction.day44_Abstraction.animalTask.Playable;
+import day44_Abstraction.animalTask.Animal;
+import day44_Abstraction.animalTask.Cat;
+import day44_Abstraction.animalTask.Dog;
+import day44_Abstraction.animalTask.Playable;
 import day45_Abstraction.shape.*;
 
 import java.util.ArrayList;
