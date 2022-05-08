@@ -43,8 +43,8 @@ public class CarTask {
         List<Car> sorted = Arrays.stream(cars)
                 .sorted(Comparator.comparing(p -> p.miles))
                 .collect(Collectors.toList());
-        Car highestMileage = sorted.get(0);
-        Car lowestMileage = sorted.get(sorted.size() - 1);
+        Car lowestMileage = sorted.get(0);
+        Car highestMileage = sorted.get(sorted.size() - 1);
 
         System.out.println("highestMileage = " + highestMileage);
         System.out.println("lowestMileage = " + lowestMileage);
