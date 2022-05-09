@@ -4,14 +4,14 @@ Topics: 1. OOP Polymorphism Continue:
 		2. OOP Review
 		
 
-Package name: day47_Polymoprhism
+Package name: day47_Polymorphism
 
 
 4 apps you should have on Cydeo Dashboard:
 		1. Canvas
 		2. Discord
 		3. Jira
-		4. Github B25
+		4. GitHub B25
 
 
 
@@ -72,11 +72,11 @@ casting: converting one type to another
 
 		2. Reference Type castings: THERE MUST BE INHERITANCE
 
-				2.1 Upcasting: casting sub type to the super type (done Implicitly)
+				2.1 Upcasting: casting subtype to the super type (done Implicitly)
 
 							Car car = new BMW();
 
-				2.2 downcasting: casting super type to sub type (done explicitly)
+				2.2 down-casting: casting super type to subtype (done explicitly)
 
 							Animal animal = new Dog();
 
@@ -118,10 +118,10 @@ OOP: Object Oriented Programming
 
 				child class: inherits all the variable & methods (that are visible) from the parent class
 
-				parent class: does not inherit any thing from child class
+				parent class: does not inherit anything from child class
 
 
-				Object class is the parent of all the classes by deafult
+				Object class is the parent of all the classes by default
 
 
 				abstract TesteBase
@@ -152,7 +152,7 @@ OOP: Object Oriented Programming
 		3. Abstraction: hiding the implementation details
 
 					Abstract method: method without the body
-									meant to be overriden
+									meant to be overridden
 
 					2 ways:
 

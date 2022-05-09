@@ -73,7 +73,9 @@ public class PolymorphismPractice {
         System.out.println(carWithHighestMileage);
         System.out.println(carWithLowestMileage);
 
-
+        System.out.println(cars[0] instanceof Car);
+        System.out.println(cars[0] instanceof Toyota);
+        System.out.println(cars[0] instanceof Tesla);
 
 
     }
