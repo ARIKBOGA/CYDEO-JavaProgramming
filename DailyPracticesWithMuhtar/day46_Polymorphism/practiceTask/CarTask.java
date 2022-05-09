@@ -31,15 +31,16 @@ public class CarTask {
                 new Tesla("Model X", 2014, 48000, "White", 236000),
         };
 
-        List<Car> eligibleForRecall = Arrays.stream(cars)
-                .filter(p -> (p.brand.equalsIgnoreCase("toyota") && p.year <= 2011 && p.year >= 2010)
-                        || (p.brand.equalsIgnoreCase("bmw") && p.year <= 2002 && p.year >= 1929)
-                        || (p.brand.equalsIgnoreCase("tesla") && p.year <= 2016 && p.year >= 2015))
+        // finding the eligible cars
+        List<Car> eligibleToRecall = Arrays.stream(cars)
+                .filter(p -> (p instanceof Toyota && p.year <= 2011 && p.year >= 2010)
+                        || (p instanceof BMW && p.year <= 2002 && p.year >= 1929)
+                        || (p instanceof Tesla && p.year <= 2016 && p.year >= 2015))
                 .sorted(Comparator.comparing(p -> p.year))
                 .collect(Collectors.toList());
+        eligibleToRecall.forEach(System.out::println);
 
-        eligibleForRecall.forEach(System.out::println);
-
+        // finding lowest and highest mileage cars by sorting
         List<Car> sorted = Arrays.stream(cars)
                 .sorted(Comparator.comparing(p -> p.miles))
                 .collect(Collectors.toList());
