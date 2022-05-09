@@ -1,11 +1,10 @@
 package day46_Polymorphism.practiceTask;
 
-import day43_Abstraction.employeeTask.*;
+import day43_Abstraction.employeeTask.Developer;
+import day43_Abstraction.employeeTask.Employee;
+import day43_Abstraction.employeeTask.Tester;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class EmployeeTask {
@@ -30,28 +29,38 @@ public class EmployeeTask {
 
 
         List<Employee> testers = Arrays.stream(employees)
-                .filter(p -> p.getClass().getSimpleName().equalsIgnoreCase("tester"))
+                .filter(p -> p instanceof Tester)
                 .collect(Collectors.toList());
 
         List<Employee> developers = Arrays.stream(employees)
-                .filter(p -> p.getClass().getSimpleName().equalsIgnoreCase("developer"))
+                .filter(p -> p instanceof Developer)
                 .collect(Collectors.toList());
 
         List<Employee> scrumMembers = new ArrayList<>();
         scrumMembers.addAll(developers);
         scrumMembers.addAll(testers);
 
+        // count of male person in the team
+        int maleCount = (int) scrumMembers.stream()
+                .filter(p -> p.getGender() == 'M')
+                .count();
+
+        // count of female person in the team
+        int femaleCount = scrumMembers.size() - maleCount;
+
+        System.out.println("There are " + femaleCount + " female employees and" + maleCount + " male employees in the team.");
+
         Tester maxSalaryTester = (Tester) testers.stream()
-                .sorted(Comparator.comparing(Employee::getSalary).reversed())
-                .collect(Collectors.toList())
-                .get(0);
+                .max(Comparator.comparing(Employee::getSalary))
+                .orElse(null);
 
         Developer maxSalaryDeveloper = (Developer) developers.stream()
-                .sorted(Comparator.comparing(Employee::getSalary).reversed())
-                .collect(Collectors.toList())
-                .get(0);
+                .max(Comparator.comparing(Employee::getSalary))
+                .orElse(null);
 
+        assert maxSalaryDeveloper != null;
         System.out.println("maxSalaryDeveloper = " + maxSalaryDeveloper.getName() + ": " + maxSalaryDeveloper.getSalary());
+        assert maxSalaryTester != null;
         System.out.println("maxSalaryTester = " + maxSalaryTester.getName() + ": " + maxSalaryTester.getSalary());
     }
 }
