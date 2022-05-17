@@ -18,9 +18,9 @@ Collections Framework: consists of multiple interface, each interface is impleme
 
 						LinkedList (C): insertion /deletion of the element is faster
 
-						Vector (C): is Synhcronized ==> thread-safe
+						Vector (C): is Synchronized ==> thread-safe
 
-						Stack (C): is Synhcronized ==> thread-safe. LIFO
+						Stack (C): is Synchronized ==> thread-safe. LIFO
 
 								pop() ===> LIFO
 

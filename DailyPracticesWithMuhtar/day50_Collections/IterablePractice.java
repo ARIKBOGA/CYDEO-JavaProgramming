@@ -9,12 +9,12 @@ public class IterablePractice {
 
     public static void main(String[] args) {
 
-        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5));
+        List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5));
 
         //  remove all the elements that are less than 4
 
         for (int i = 0; i < list.size(); i++) {
-            if(list.get(i) < 4){
+            if (list.get(i) < 4) {
                 list.remove(i);
             }
         }
@@ -23,29 +23,29 @@ public class IterablePractice {
 
         System.out.println("===================================================");
 
-        List<Integer> list2 = new ArrayList<>(Arrays.asList(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5));
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5));
 
         //  remove all the elements that are less than 4
 
-        Iterator<Integer> it = list2.iterator();
+        Iterator<Integer> list2Iterator = list2.iterator();
 
         /*
-        boolean r1 = it.hasNext();
+        boolean r1 = list2Iterator.hasNext();
 
         System.out.println(r1);
 
-        System.out.println(it.next());
+        System.out.println(list2Iterator.next());
 
-        boolean r2 = it.hasNext();
+        boolean r2 = list2Iterator.hasNext();
 
         System.out.println(r2);
 
-        System.out.println(it.next());
+        System.out.println(list2Iterator.next());
     */
 
-        while(it.hasNext()){
-            if( it.next()  < 4 ){
-                it.remove();
+        while (list2Iterator.hasNext()) {
+            if (list2Iterator.next() < 4) {
+                list2Iterator.remove();
             }
         }
 
@@ -53,10 +53,10 @@ public class IterablePractice {
 
         System.out.println("===================================================");
 
-        List<Integer> list3 = new ArrayList<>(Arrays.asList(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5));
+        List<Integer> list3 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5));
 
-        for( Iterator<Integer> i=list3.iterator() ; i.hasNext() ; ){
-            if(i.next() < 4 ){
+        for (Iterator<Integer> i = list3.iterator(); i.hasNext(); ) {
+            if (i.next() < 4) {
                 i.remove();
             }
         }
@@ -65,14 +65,11 @@ public class IterablePractice {
 
         System.out.println("===================================================");
 
-        List<Integer> list4 = new ArrayList<>(Arrays.asList(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5));
+        List<Integer> list4 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5));
 
-        list4.removeIf( each ->  each < 4 );
+        list4.removeIf(each -> each < 4);
 
         System.out.println(list4);
-
-
-
 
 
     }

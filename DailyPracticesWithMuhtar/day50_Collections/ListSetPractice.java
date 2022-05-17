@@ -8,19 +8,19 @@ public class ListSetPractice {
     public static void main(String[] args) {
 
         Set<Integer> set = new HashSet<>();
-        set.addAll(Arrays.asList(1,2,3,4,5,1,2,3,4,5));
+        set.addAll(Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5));
 
         System.out.println(set);
 
-       // Integer[] array = set.toArray(new Integer[0]);
+        // Integer[] array = set.toArray(new Integer[0]);
 
-        List<Integer> list =new ArrayList<>( set );
+        List<Integer> list = new ArrayList<>(set);
 
         System.out.println(list);
 
 
-      //  List<String> names = null;
-       // System.out.println(names.size());
+        //  List<String> names = null;
+        // System.out.println(names.size());
 
         System.out.println("----------------------------------------");
 
@@ -30,7 +30,7 @@ public class ListSetPractice {
 
         System.out.println("chars = " + chars); //[A, B, C, D]
 
-        (  (Stack)chars ).pop();
+        ((Stack) chars).pop();
 
         System.out.println("chars = " + chars); //[A, B, C]
 
@@ -50,10 +50,16 @@ public class ListSetPractice {
 
         System.out.println(names);
 
+        //System.out.println(((Stack<String>) names).pop());  // ClassCastException
 
 
+        Integer[] ints = new ArrayList<>(
+                new TreeSet<>(
+                        List.of(9, 3, 7, 1, 0, 5)
+                )
+        ).toArray(new Integer[0]);
 
-
+        Arrays.stream(ints).forEach(System.out::print);
 
 
     }
