@@ -7,11 +7,11 @@ public class Test {
     public static void main(String[] args) {
 
         // function1: create a function that can display a number is odd or even
-        MyFirstFunctionalInterface  oddOrEvenNumber =  (n) -> {
-            if(n%2==0){
+        MyFirstFunctionalInterface oddOrEvenNumber = (n) -> {
+            if (n % 2 == 0) {
                 System.out.println(n + " is even number");
-            }else{
-                System.out.println(n+" is odd number");
+            } else {
+                System.out.println(n + " is odd number");
             }
         };
 
@@ -22,9 +22,9 @@ public class Test {
         MyFirstFunctionalInterface eligibleToBuyAlcohol;
 
         eligibleToBuyAlcohol = (age) -> {
-            if(age >= 21){
+            if (age >= 21) {
                 System.out.println("Eligible to buy alcohol");
-            }else{
+            } else {
                 System.out.println("Not eligible to buy alcohol");
             }
         };
@@ -35,17 +35,18 @@ public class Test {
 
         MyFirstFunctionalInterface printCube;
 
-        printCube = n ->  System.out.println(n*n*n); ;
+        printCube = n -> System.out.println(n * n * n);
+
 
         printCube.apply(3);
 
         //function4: create a function that can check if a number is evenly divisble by  3 & 5
 
-        MyFirstFunctionalInterface divisibleBy3And5 =  n -> {
-            if(n % 15 ==0){
-                System.out.println(n+" is divisible by 3 and 5");
-            }else{
-                System.out.println(n+" is not divisible by 3 and 5");
+        MyFirstFunctionalInterface divisibleBy3And5 = n -> {
+            if (n % 15 == 0) {
+                System.out.println(n + " is divisible by 3 and 5");
+            } else {
+                System.out.println(n + " is not divisible by 3 and 5");
             }
         };
 
@@ -53,7 +54,6 @@ public class Test {
 
 
     }
-
 
 
 }
