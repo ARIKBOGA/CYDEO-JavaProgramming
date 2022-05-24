@@ -11,19 +11,19 @@ class Db {
     }
     // Do not touch
 
-    public void setData(String data) {
-        this.data = data;
-    }
-
-    public void setYint(int yint) {
-        this.yint = yint;
-    }
-
     public String getData() {
         return data;
     }
 
+    public void setData(String data) {
+        this.data = data;
+    }
+
     public int getYint() {
         return yint;
+    }
+
+    public void setYint(int yint) {
+        this.yint = yint;
     }
 }

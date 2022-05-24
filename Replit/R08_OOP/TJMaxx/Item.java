@@ -14,10 +14,8 @@ public class Item {
         setPrice(price);
     }
 
-    public void setName(String name) {
-        if (!name.isEmpty() && !name.isBlank()) {
-            this.name = name;
-        }
+    public double getPrice() {
+        return price;
     }
 
     public void setPrice(double price) {
@@ -25,13 +23,14 @@ public class Item {
             this.price = price;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        if (!name.isEmpty() && !name.isBlank()) {
+            this.name = name;
+        }
     }
 
     public int getQuantity() {

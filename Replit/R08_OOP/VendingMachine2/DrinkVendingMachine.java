@@ -1,7 +1,9 @@
 package R08_OOP.VendingMachine2;
 
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class DrinkVendingMachine extends VendingMachine {

@@ -12,7 +12,7 @@ class NameOfMonths {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter month number : ");
         int number = scan.nextInt();
-        Locale tr = new Locale("tr","tr");
+        Locale tr = new Locale("tr", "tr");
         try {
             System.out.println((Month.of(number).name()).substring(0, 1) + Month.of(number).name().substring(1).toLowerCase(Locale.ENGLISH));
             System.out.println((Month.of(number).name()).substring(0, 1) + Month.of(number).name().substring(1).toLowerCase(tr));

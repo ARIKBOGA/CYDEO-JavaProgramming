@@ -6,11 +6,14 @@ public class UtopianTree {
         int growth;
         for (int i = 1; i <= 10; i++) {
             switch (i) {
-                case 1: case 2: case 3:
+                case 1:
+                case 2:
+                case 3:
                     treeSize++;
                     growth = 1;
                     break;
-                default: treeSize += 2;
+                default:
+                    treeSize += 2;
                     growth = 2;
             }
             System.out.println("year " + i + " - growth " + growth + " cm\ntree size: " + treeSize + "cm");

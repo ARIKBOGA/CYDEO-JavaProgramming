@@ -3,7 +3,7 @@ package R06_Methods;
 import java.util.Scanner;
 
 public class MethodsWithReturn_Max {
-    public static int max(int x, int max){
+    public static int max(int x, int max) {
         return Math.max(max, x);
     }
 

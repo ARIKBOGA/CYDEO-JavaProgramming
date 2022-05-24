@@ -23,7 +23,7 @@ public class NestedMap {
         map2.put("Alex", 160000);
 
 
-        Map< Map<Integer, String>,  Map<String, Integer> > mapOfMap = new LinkedHashMap<>();
+        Map<Map<Integer, String>, Map<String, Integer>> mapOfMap = new LinkedHashMap<>();
         mapOfMap.put(map1, map2);
 
         for (Map.Entry<Map<Integer, String>, Map<String, Integer>> mapMapEntry : mapOfMap.entrySet()) {
@@ -40,12 +40,12 @@ public class NestedMap {
 
         System.out.println("------------------------------------------------");
 
-        System.out.println( mapOfMap.get(map1).get("Veronica") );
+        System.out.println(mapOfMap.get(map1).get("Veronica"));
 
         System.out.println("------------------------------------------------");
 
 
-        Map< Map<Map<Integer, Integer>, Map<Integer, Integer>>,  Map<Map<Integer, Integer>, Map<Integer, Integer>> > mapOfMapOfMap = new LinkedHashMap<>();
+        Map<Map<Map<Integer, Integer>, Map<Integer, Integer>>, Map<Map<Integer, Integer>, Map<Integer, Integer>>> mapOfMapOfMap = new LinkedHashMap<>();
 
 
     }

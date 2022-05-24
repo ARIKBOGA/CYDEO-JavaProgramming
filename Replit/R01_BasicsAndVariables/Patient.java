@@ -9,36 +9,36 @@ public class Patient {
 
         Scanner scan = new Scanner(System.in);
 
-        String firstName,lastName,fullName, email, street, state, city,     address, contacts;
+        String firstName, lastName, fullName, email, street, state, city, address, contacts;
 
-        int age,zipcode;
+        int age, zipcode;
         double height, weight;
         boolean isMarried;
-        long workPhoneNumber,personalPhoneNumber;
+        long workPhoneNumber, personalPhoneNumber;
 
         System.out.println("Welcome to the patient portal!\nPlease enter your personal information\nEnter your first name");
-        firstName=scan.nextLine();
+        firstName = scan.nextLine();
 
         System.out.println("Enter your last name");
-        lastName=scan.nextLine();
+        lastName = scan.nextLine();
 
         System.out.println("Enter your email");
-        email=scan.nextLine();
+        email = scan.nextLine();
 
         System.out.println("Enter your street");
-        street=scan.nextLine();
+        street = scan.nextLine();
 
         System.out.println("Enter your city");
-        city=scan.nextLine();
+        city = scan.nextLine();
 
         System.out.println("Enter your state");
-        state=scan.nextLine();
+        state = scan.nextLine();
 
         System.out.println("Enter your zip code");
-        zipcode=Integer.parseInt(scan.nextLine());
+        zipcode = Integer.parseInt(scan.nextLine());
 
         System.out.println("Enter your work phone number");
-        workPhoneNumber= Long.parseLong(scan.nextLine());
+        workPhoneNumber = Long.parseLong(scan.nextLine());
 
         System.out.println("Enter your personal phone number");
         personalPhoneNumber = Long.parseLong(scan.nextLine());
@@ -57,15 +57,11 @@ public class Patient {
 
         scan.close();
 
-        contacts = "work phone number - "+workPhoneNumber+", personal phone number - "+personalPhoneNumber+", email: "+email;
-        fullName = lastName +", "+firstName;
-        address = street + ", "+ city+ ", " + state + " " + zipcode;
+        contacts = "work phone number - " + workPhoneNumber + ", personal phone number - " + personalPhoneNumber + ", email: " + email;
+        fullName = lastName + ", " + firstName;
+        address = street + ", " + city + ", " + state + " " + zipcode;
 
-        System.out.print("Patient personal information\nFull name: " + fullName+ "\nAddress: "+address+"\nContacts: "+contacts+"\nAge: "+age+"\nHeight: "+ height + "\nWeight: "+ weight+" pounds\nMarried?: "+isMarried);
-
-
-
-
+        System.out.print("Patient personal information\nFull name: " + fullName + "\nAddress: " + address + "\nContacts: " + contacts + "\nAge: " + age + "\nHeight: " + height + "\nWeight: " + weight + " pounds\nMarried?: " + isMarried);
 
 
     }

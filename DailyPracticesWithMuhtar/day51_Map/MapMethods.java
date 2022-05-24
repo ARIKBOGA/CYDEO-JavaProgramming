@@ -12,15 +12,15 @@ public class MapMethods {
         Map<String, Integer> students = new HashMap<>();
         students.put("Aygun", 95);
         students.put("Maria", 95);
-        students.put("Ali",95);
-        students.put("Alex",96);
-        students.put("Ozan",98);
-        students.put("Serkan",97);
-        students.put("Andriy",98);
+        students.put("Ali", 95);
+        students.put("Alex", 96);
+        students.put("Ozan", 98);
+        students.put("Serkan", 97);
+        students.put("Andriy", 98);
 
-        students.put("Ali",85);
-        students.put("Ali",86);
-        students.put("Ali",87);
+        students.put("Ali", 85);
+        students.put("Ali", 86);
+        students.put("Ali", 87);
 
         System.out.println(students);
         System.out.println(students.size());
@@ -32,7 +32,7 @@ public class MapMethods {
 
         // replace Ali' score to 90
 
-        students.replace("Ali", 90 );
+        students.replace("Ali", 90);
 
         System.out.println(students);
 
@@ -49,7 +49,6 @@ public class MapMethods {
         boolean r2 = students.containsKey("Serkan");
         System.out.println(r1);
         System.out.println(r2);
-
 
 
         boolean r3 = students.containsValue(97);
@@ -70,7 +69,7 @@ public class MapMethods {
         System.out.println("map1 = " + map1);
         System.out.println("map2 = " + map2);
 
-        System.out.println(map1 ==  map2);
+        System.out.println(map1 == map2);
         System.out.println(map1.equals(map2));
 
         map1.clear();
@@ -78,9 +77,6 @@ public class MapMethods {
 
         System.out.println(map1);
         System.out.println(map2);
-
-
-
 
 
     }

@@ -21,6 +21,6 @@ public class MethodsWithArray3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String[] strs = new String[in.nextInt()];
-        getDup(new String[]{"1", "g", "aabb", "7", "7", "2", "aa", "7" });
+        getDup(new String[]{"1", "g", "aabb", "7", "7", "2", "aa", "7"});
     }
 }

@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class MethodsWithString_Cover {
     public static String coverString(String main, String coverME) {
-        if(!main.contains(coverME)) return "["+main+"]";
-        return main.replaceAll(coverME,"["+coverME+"]");
+        if (!main.contains(coverME)) return "[" + main + "]";
+        return main.replaceAll(coverME, "[" + coverME + "]");
     }
 
     public static void main(String[] args) {

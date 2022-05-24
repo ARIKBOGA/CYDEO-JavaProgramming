@@ -4,7 +4,8 @@ public class Value {
     private int val;
     private boolean modified;
 
-    public Value() {}
+    public Value() {
+    }
 
     public Value(int val) {
         this.val = val;

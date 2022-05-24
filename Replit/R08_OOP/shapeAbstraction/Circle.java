@@ -1,8 +1,8 @@
 package R08_OOP.shapeAbstraction;
 
 class Circle extends Shape {
-    private double radius;
     private static final double PI = 3.14;
+    private double radius;
 
     public Circle(double radius) {
         this.radius = radius;

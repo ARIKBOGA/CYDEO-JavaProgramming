@@ -93,15 +93,15 @@ public class BuildInFunctionalInterfaces1 {
         Function<List<Integer>, int[]> convertToArray = (a) -> {
             int[] result = new int[a.size()];
             for (int i = 0; i < a.size(); i++) {
-                 result[i] = a.get(i);
+                result[i] = a.get(i);
             }
 
-           return result;
+            return result;
         };
 
-        List<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        List<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
 
-       int[] result2 = convertToArray.apply(numbers);
+        int[] result2 = convertToArray.apply(numbers);
 
         System.out.println("-------------------------------------------");
 
@@ -112,7 +112,6 @@ public class BuildInFunctionalInterfaces1 {
         // Create a function that can reverse an array and returns it
 
         // create a function that can reverse a List
-
 
 
     }

@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class SwitchElements {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int[] arr = {1,2,3,4};
-        System.out.println(Arrays.toString(do_switch(arr)));;
+        int[] arr = {1, 2, 3, 4};
+        System.out.println(Arrays.toString(do_switch(arr)));
+        ;
     }
 
 

@@ -30,7 +30,7 @@ public class BuildInFunctionalInterfaces2 {
             boolean result = false;
 
             for (Integer each : a) {
-                if(each == b){
+                if (each == b) {
                     result = true;
                     break;
                 }
@@ -39,7 +39,7 @@ public class BuildInFunctionalInterfaces2 {
             return result;
         };
 
-        Integer[] arr = {1,2,3,4,5,6,7,8,9,10};
+        Integer[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         boolean r1 = contains.test(arr, 11);
 
         System.out.println(r1);
@@ -58,7 +58,7 @@ public class BuildInFunctionalInterfaces2 {
 
         System.out.println("---------------------------------------------");
         // create a function that can print the given string for given number of times
-        BiConsumer<String, Integer>  printMultipleTimes = (s, n) -> {
+        BiConsumer<String, Integer> printMultipleTimes = (s, n) -> {
             for (int i = 0; i < n; i++) {
                 System.out.println(s);
             }
@@ -69,11 +69,11 @@ public class BuildInFunctionalInterfaces2 {
         System.out.println("---------------------------------------------");
 
         Map<String, String> scrumTeam1 = new LinkedHashMap<>();
-        scrumTeam1.put("Abdulhamid","SM");
-        scrumTeam1.put("Nikita","Developer");
-        scrumTeam1.put("Alina","Developer");
-        scrumTeam1.put("Mert","PO");
-        scrumTeam1.put("Lee","SDET");
+        scrumTeam1.put("Abdulhamid", "SM");
+        scrumTeam1.put("Nikita", "Developer");
+        scrumTeam1.put("Alina", "Developer");
+        scrumTeam1.put("Mert", "PO");
+        scrumTeam1.put("Lee", "SDET");
 
         /*
         for (Map.Entry<String, String> entry : scrumTeam1.entrySet()) {
@@ -83,13 +83,13 @@ public class BuildInFunctionalInterfaces2 {
         }
          */
 
-        scrumTeam1.forEach(  (k, v) -> System.out.println(k+" : "+v) );
+        scrumTeam1.forEach((k, v) -> System.out.println(k + " : " + v));
 
 
         System.out.println("---------------------------------------------");
 
         //1. create a function that takes two integers and returns the maximum integer
-        BiFunction<Integer, Integer, Integer> maxNum = (a, b) -> (a>b)?a:b;
+        BiFunction<Integer, Integer, Integer> maxNum = (a, b) -> (a > b) ? a : b;
 
         int max = maxNum.apply(100, 200);
 
@@ -102,13 +102,13 @@ public class BuildInFunctionalInterfaces2 {
 
             for (int each : x) result.add(each);
 
-            for( int each: y) result.add(each);
+            for (int each : y) result.add(each);
 
             return result;
         };
 
-        int[] arr1 = {1,2,3,4,5};
-        int[] arr2 = {6,7,8};
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {6, 7, 8};
 
         List<Integer> nums = merge.apply(arr1, arr2);
 
@@ -121,10 +121,10 @@ public class BuildInFunctionalInterfaces2 {
         map ==> {Josh=100, Daniel=110}
          */
 
-        BiFunction<List<String>, List<Integer>, Map<String, Integer>>  merge2 = (j, k) ->{
+        BiFunction<List<String>, List<Integer>, Map<String, Integer>> merge2 = (j, k) -> {
             Map<String, Integer> map = new HashMap<>();
             for (int i = 0; i < j.size(); i++) {
-                map.put( j.get(i),  k.get(i));
+                map.put(j.get(i), k.get(i));
             }
             return map;
         };
@@ -137,8 +137,6 @@ public class BuildInFunctionalInterfaces2 {
         Map<String, Integer> students = merge2.apply(names, scores);
 
         System.out.println(students);
-
-
 
 
     }

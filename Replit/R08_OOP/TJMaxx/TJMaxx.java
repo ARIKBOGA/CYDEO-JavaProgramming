@@ -73,10 +73,10 @@ public class TJMaxx {
     }
 
     public OnSaleItem getOnSaleItem(String name) { // if it doesn't exist this method returns null
-       return onSaleItems.stream()
-               .filter(item->item.getName().equals(name))
-               .findAny()
-               .orElse(null);
+        return onSaleItems.stream()
+                .filter(item -> item.getName().equals(name))
+                .findAny()
+                .orElse(null);
     }
 
     public void removeItem(int catalogNumber) {

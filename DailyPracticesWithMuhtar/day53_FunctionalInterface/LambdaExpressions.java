@@ -10,12 +10,11 @@ public class LambdaExpressions {
                     return reverse;
                 };
 
-       String result = stringReverse.method("Wooden Spoon");
+        String result = stringReverse.method("Wooden Spoon");
 
         System.out.println(result);
 
         //create a function that can return the cube of an integer
-
 
 
     }

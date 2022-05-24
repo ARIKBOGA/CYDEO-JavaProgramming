@@ -10,19 +10,19 @@ public class Citizens {
         int seniorCitizens, age,
                 nonSeniorCitizens;
         System.out.print("Enter current count for seniorCitizens and nonSeniorCitizens:");
-        seniorCitizens=sc.nextInt();
-        nonSeniorCitizens=sc.nextInt();
+        seniorCitizens = sc.nextInt();
+        nonSeniorCitizens = sc.nextInt();
         System.out.print("What is new citizen's age?");
-        age= sc.nextInt();
-        if(age>=65) {
+        age = sc.nextInt();
+        if (age >= 65) {
             seniorCitizens++;
             System.out.println("Senior Citizen");
-        }else{
+        } else {
             nonSeniorCitizens++;
             System.out.println("Non-Senior Citizen");
         }
-        System.out.println("New seniorCitizens count "+seniorCitizens);
-        System.out.println("New nonSeniorCitizens count "+ nonSeniorCitizens);
+        System.out.println("New seniorCitizens count " + seniorCitizens);
+        System.out.println("New nonSeniorCitizens count " + nonSeniorCitizens);
 
     }
 }

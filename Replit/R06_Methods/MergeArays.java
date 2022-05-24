@@ -21,6 +21,7 @@ public class MergeArays {
             b.append(",");
         }
     }
+
     public static int[] mergR(int[] first, int[] second) {
         int[] array = new int[first.length + second.length];
 
@@ -43,10 +44,10 @@ public class MergeArays {
         for (int i = 0; i < nums2.length; i++) {
             nums2[i] = in.nextInt();
         }
-        int [] res = mergR(nums, nums2);
-        if(res[0] == 5) {
+        int[] res = mergR(nums, nums2);
+        if (res[0] == 5) {
             System.out.println(Arrays.toString(res));
-        }else{
+        } else {
             System.out.println(printWithoutSpaces(res));
         }
     }

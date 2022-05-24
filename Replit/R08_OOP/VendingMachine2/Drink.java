@@ -22,9 +22,8 @@ public class Drink {
     }
 
     /**
-     *
      * @return String in this format:
-     *Drink{name='Iced Coffee', cost=4.5, quantity=10}
+     * Drink{name='Iced Coffee', cost=4.5, quantity=10}
      */
 
     public String getName() {

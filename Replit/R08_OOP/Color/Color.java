@@ -4,8 +4,6 @@ import java.util.Arrays;
 
 public class Color {
 
-    private int[] rgb;
-
     public final static int[] WHITE = new int[]{255, 255, 255};
     public final static int[] LIGHT_GRAY = new int[]{192, 192, 192};
     public final static int[] GRAY = new int[]{128, 128, 128};
@@ -19,6 +17,7 @@ public class Color {
     public final static int[] MAGENTA = new int[]{255, 0, 255};
     public final static int[] CYAN = new int[]{0, 255, 255};
     public final static int[] BLUE = new int[]{0, 0, 255};
+    private int[] rgb;
 
     public Color(int r, int g, int b) {
         rgb = new int[]{r, g, b};

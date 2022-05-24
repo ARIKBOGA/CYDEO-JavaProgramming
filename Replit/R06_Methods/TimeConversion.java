@@ -9,7 +9,7 @@ public class TimeConversion {
     }
 
     public static void timeConversion(String s) {
-        s=s.trim();
+        s = s.trim();
         if (!s.contains("P") || s.equals("12:00:00PM")) {
             if (s.equals("12:00:00AM")) {
                 System.out.println("00:00:00");

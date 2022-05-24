@@ -13,11 +13,9 @@ public class Test2 {
         printEach.test("Wooden Spoon");
 
 
-        MySecondFunctionalInterface<Integer> cube = n -> System.out.println(n*n*n);
+        MySecondFunctionalInterface<Integer> cube = n -> System.out.println(n * n * n);
 
         cube.test(5);
-
-
 
 
     }

@@ -5,7 +5,7 @@ public class FindMaxLengthString {
         String[] words = {"aaa", "bbbbb", "whasstupppp", "longg", "jaaaaavvaaaaaaaaaa"};
         String longest = "";
         for (String s : words) {
-            if (s.length() > longest.length()) longest=s;
+            if (s.length() > longest.length()) longest = s;
         }
         System.out.println(longest);
     }

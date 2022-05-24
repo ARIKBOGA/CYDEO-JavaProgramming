@@ -15,12 +15,12 @@ public class Variables {
         System.out.println(count);
         System.out.println(population);
 
-        String s1= "Hello";
-        String s2= "World";
-        String s3= "This";
-        String s4= "is";
-        String s5= "JAVA";
-        System.out.println(String.join(" ",s1,s2,s3,s4,s5));
+        String s1 = "Hello";
+        String s2 = "World";
+        String s3 = "This";
+        String s4 = "is";
+        String s5 = "JAVA";
+        System.out.println(String.join(" ", s1, s2, s3, s4, s5));
 
     }
 }

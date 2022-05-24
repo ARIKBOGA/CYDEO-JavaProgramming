@@ -1,7 +1,6 @@
 package R08_OOP.DogAbstraction;
 
 
-
 class Main {
     public static void main(String[] args) {
 

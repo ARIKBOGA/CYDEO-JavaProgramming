@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class DeclaringArrayList {
 
-    public static ArrayList<Integer> test(){
+    public static ArrayList<Integer> test() {
         return new ArrayList<>();
     }
 

@@ -1,8 +1,5 @@
 package R06_Methods;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class PrintUniqueNumbers {
     public static void main(String[] args) {
 

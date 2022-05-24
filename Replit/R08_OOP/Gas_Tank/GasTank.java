@@ -1,8 +1,8 @@
 package R08_OOP.Gas_Tank;
 
 public class GasTank {
-    private double amount;
     private final double capacity;
+    private double amount;
 
     public GasTank(double capacity) {
         this.capacity = capacity;

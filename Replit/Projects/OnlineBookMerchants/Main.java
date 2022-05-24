@@ -10,7 +10,7 @@ public class Main {
         int nbooksPurchased = scan.nextInt();
 
         freeBooks = isPremiumCustomer ? nbooksPurchased >= 8 ? 2 : nbooksPurchased >= 5 ? 1 : 0
-                                        : nbooksPurchased >= 12 ? 2 : nbooksPurchased >= 7 ? 1 : 0;
+                : nbooksPurchased >= 12 ? 2 : nbooksPurchased >= 7 ? 1 : 0;
 
         System.out.println(freeBooks);
     }

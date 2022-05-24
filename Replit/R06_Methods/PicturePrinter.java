@@ -6,7 +6,7 @@ public class PicturePrinter {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("select image:\n1)sunset\n2)earth\n3)desert");
-        switch (scan.nextInt()){
+        switch (scan.nextInt()) {
             case 1:
                 printSunset();
                 break;

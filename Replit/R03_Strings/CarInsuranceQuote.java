@@ -8,10 +8,11 @@ public class CarInsuranceQuote {
         System.out.println("Invalid data!");
         System.exit(0);
     }
+
     public static void main(String[] args) {
         double premium = 0;
-        int accidentsAmount, daysDrivenToWorkOrSchool , milesToWorkOrSchool ;
-        String vehicleOwnership , vehicleUsage , continuousInsurance , education , name , referenceNumber ;
+        int accidentsAmount, daysDrivenToWorkOrSchool, milesToWorkOrSchool;
+        String vehicleOwnership, vehicleUsage, continuousInsurance, education, name, referenceNumber;
         Scanner scan = new Scanner(System.in).useLocale(Locale.US);
         System.out.println("Welcome to the CountyFarm car insurance!\nEnter your name");
         name = scan.nextLine();
@@ -33,9 +34,11 @@ public class CarInsuranceQuote {
 
         System.out.println("How is this vehicle primarily used?");
         vehicleUsage = scan.nextLine();
-        if ("Business".equalsIgnoreCase(vehicleUsage)) { premium += 50; }
-        else if ("Pleasure".equalsIgnoreCase(vehicleUsage)) { premium += 10; }
-        else if ("Commute".equalsIgnoreCase(vehicleUsage)) {
+        if ("Business".equalsIgnoreCase(vehicleUsage)) {
+            premium += 50;
+        } else if ("Pleasure".equalsIgnoreCase(vehicleUsage)) {
+            premium += 10;
+        } else if ("Commute".equalsIgnoreCase(vehicleUsage)) {
             premium += 20;
             System.out.println("Days Driven To Work And/Or School");
             daysDrivenToWorkOrSchool = Integer.parseInt(scan.nextLine());

@@ -13,6 +13,6 @@ public class CombineAll {
         ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
         ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(-6, -7, -8, -9));
 
-        System.out.println(combineAll(list1,list2));
+        System.out.println(combineAll(list1, list2));
     }
 }
