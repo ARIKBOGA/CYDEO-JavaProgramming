@@ -23,18 +23,17 @@ public class Developer {
                 '}';
     }
 
-    public void coding(){
-        System.out.println(name+ " is coding");
+    public void coding() {
+        System.out.println(name + " is coding");
     }
 
-    public void unitTesting(){
-        System.out.println(name+ " is unit testing");
+    public void unitTesting() {
+        System.out.println(name + " is unit testing");
     }
 
-    public void fixingBug(){
-        System.out.println(name+ " is fixing bug");
+    public void fixingBug() {
+        System.out.println(name + " is fixing bug");
     }
-
 
 
 }

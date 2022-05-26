@@ -1,11 +1,10 @@
 package day33_Statics.PracticeTasks;
 
 public class Dog {
+    static int numberOfLegs = 2, numberOfEyes = 2, numberOfWings = 0;
     String breed, color, size;
     char gender;
     int age;
-
-    static int numberOfLegs = 2, numberOfEyes = 2, numberOfWings = 0;
 
     public Dog(String breed, String color, String size, char gender, int age) {
         this.breed = breed;

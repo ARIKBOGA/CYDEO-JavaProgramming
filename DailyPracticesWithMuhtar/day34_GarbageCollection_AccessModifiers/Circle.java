@@ -4,17 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Circle {
-    double radius;
-    double area;
     static double pi = 3.15;
     static String name;
     static List<Integer> numbers;
-
-
-    public Circle(double radius) {
-        this.radius = radius;
-        this.area = pi * radius * radius;
-    }
 
     static {
         pi = 3.14;
@@ -22,6 +14,14 @@ public class Circle {
         numbers = new ArrayList<>();
         numbers.add(23);
         numbers.add(11);
+    }
+
+    double radius;
+    double area;
+
+    public Circle(double radius) {
+        this.radius = radius;
+        this.area = pi * radius * radius;
     }
 
     public static void main(String[] args) {

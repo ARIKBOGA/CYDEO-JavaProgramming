@@ -57,7 +57,7 @@ public class SetPractice2 {
 
         int fifthElement =
                 new LinkedHashSet<>(Arrays.asList(nums))
-                .toArray(new Integer[0])[4];
+                        .toArray(new Integer[0])[4];
 
         System.out.println("fifthElement = " + fifthElement);
 

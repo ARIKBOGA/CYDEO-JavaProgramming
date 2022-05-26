@@ -1,10 +1,6 @@
 package day35_Encapsulation;
 
 public class Person {
-    String name;
-    int age;
-    char gender;
-    String language;
     static String planet;
     static boolean isHuman;
     static boolean hasNose;
@@ -18,6 +14,11 @@ public class Person {
         numberOfWings = 0;
         numberOfHead = 1;
     }
+
+    String name;
+    int age;
+    char gender;
+    String language;
 
     public Person(String name, int age, char gender, String language) {
         this.name = name;

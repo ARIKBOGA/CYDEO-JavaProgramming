@@ -8,6 +8,6 @@ public class Square {
             }
             System.out.println();
         }
-        System.out.println(3+4+"ali"+5+6+7+"veli");
+        System.out.println(3 + 4 + "ali" + 5 + 6 + 7 + "veli");
     }
 }

@@ -13,7 +13,7 @@ public class Circle {
         String str = scan.nextLine();
 
         int x = Integer.parseInt(scan.nextLine());
-        double d =Double.parseDouble(scan.nextLine());
+        double d = Double.parseDouble(scan.nextLine());
         boolean b = Boolean.parseBoolean(scan.nextLine());
         String s = scan.nextLine();
 

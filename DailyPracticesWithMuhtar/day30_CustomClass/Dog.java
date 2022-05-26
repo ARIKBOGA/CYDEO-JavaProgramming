@@ -1,7 +1,6 @@
 package day30_CustomClass;
 
 
-
 public class Dog {
 
     public String name;
@@ -21,24 +20,25 @@ public class Dog {
         this.color = color;
     }
 
-    Dog(){}
+    Dog() {
+    }
 
-    public void setInfo(String dogName, String dogBreed, int dogAge, char dogGender, String dogSize, String dogColor){
+    public void setInfo(String dogName, String dogBreed, int dogAge, char dogGender, String dogSize, String dogColor) {
         name = dogName;
         breed = dogBreed;
         age = dogAge;
-        gender= dogGender;
+        gender = dogGender;
         size = dogSize;
         color = dogColor;
     }
 
 
-    public void eat(){
-        System.out.println(name+" is eating");
+    public void eat() {
+        System.out.println(name + " is eating");
     }
 
-    public void bark(){
-        System.out.println(name+" is barking");
+    public void bark() {
+        System.out.println(name + " is barking");
     }
 
     public String toString() {

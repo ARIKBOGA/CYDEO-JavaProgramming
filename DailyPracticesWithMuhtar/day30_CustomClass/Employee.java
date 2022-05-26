@@ -35,8 +35,8 @@ public class Employee {
     }
 
 
-    public void work(){
-        System.out.println(jobTitle+" "+name +" is working");
+    public void work() {
+        System.out.println(jobTitle + " " + name + " is working");
     }
 
 

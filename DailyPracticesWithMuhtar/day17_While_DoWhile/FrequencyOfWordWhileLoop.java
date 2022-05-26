@@ -1,6 +1,5 @@
 package day17_While_DoWhile;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class FrequencyOfWordWhileLoop {

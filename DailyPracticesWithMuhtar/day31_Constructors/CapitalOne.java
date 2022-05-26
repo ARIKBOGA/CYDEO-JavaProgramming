@@ -5,7 +5,7 @@ public class CapitalOne {
     public static void main(String[] args) {
 
         BankAccount account1 = new BankAccount();
-        account1.setInfo("Ahmet Ozkok",123456789);
+        account1.setInfo("Ahmet Ozkok", 123456789);
 
         System.out.println(account1);
 
@@ -28,8 +28,6 @@ public class CapitalOne {
         account2.deposit(10000);
 
         account2.checkBalance();
-
-
 
 
     }

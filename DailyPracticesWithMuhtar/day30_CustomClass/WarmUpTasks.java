@@ -9,8 +9,6 @@ public class WarmUpTasks {
     public static void main(String[] args) {
 
 
-
-
         ArrayList<String> names = new ArrayList<>(Arrays.asList("Ali", "Osman", "Ömer", "Hasan", "Hüsyin"));
         Collections.swap(names, 0, names.size() - 1);
         System.out.println("names = " + names);

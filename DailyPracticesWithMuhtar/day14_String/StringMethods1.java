@@ -4,7 +4,6 @@ package day14_String;
 import java.text.NumberFormat;
 import java.util.Currency;
 import java.util.Locale;
-import java.util.spi.CurrencyNameProvider;
 
 public class StringMethods1 {
     public static void main(String[] args) {
@@ -26,19 +25,19 @@ public class StringMethods1 {
         str2 = str2.replace("$", "€");
         System.out.println("str2 = " + str2);
         System.out.println(str2.replace("My", "Your"));
-        str2 = str2.replace("000","K");
+        str2 = str2.replace("000", "K");
         System.out.println(str2);
 
         System.out.println("\n=============================================\n");
         System.out.println(str.toLowerCase(Locale.ROOT).contains("java"));
         System.out.println("\n=============================================\n");
 
-        String str3 ="&";
-        System.out.println(str3.repeat(length/3));
+        String str3 = "&";
+        System.out.println(str3.repeat(length / 3));
 
         Currency cur = Currency.getInstance(Locale.GERMANY);
-        Locale tr = new Locale("tr","tr");
-        NumberFormat format =  NumberFormat.getCurrencyInstance(tr);
+        Locale tr = new Locale("tr", "tr");
+        NumberFormat format = NumberFormat.getCurrencyInstance(tr);
         System.out.println(format.format(120));
         format.setCurrency(cur);
         System.out.println(format.format(120));

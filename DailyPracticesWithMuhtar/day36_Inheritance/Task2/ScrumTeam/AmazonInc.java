@@ -1,8 +1,5 @@
 package day36_Inheritance.Task2.ScrumTeam;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class AmazonInc {
     public static void main(String[] args) {
         ProductOwner po = new ProductOwner("Burak", 'M', 32, 200_000);

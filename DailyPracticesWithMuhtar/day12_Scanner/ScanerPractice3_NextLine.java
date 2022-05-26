@@ -20,7 +20,7 @@ public class ScanerPractice3_NextLine {
         System.out.println("progLanguage = " + progLanguage);
         System.out.println("Your hobbies: ");
         for (int i = 0; i < hobbies.length; i++) {
-            System.out.println((i+1)+". "+hobbies[i]);
+            System.out.println((i + 1) + ". " + hobbies[i]);
         }
     }
 }

@@ -7,8 +7,8 @@ public class Calculators {
 
         int addition = firstNumber + secondNumber;
         int substraction = firstNumber - secondNumber;
-        int multiplication = firstNumber*secondNumber;
-        int division=firstNumber/secondNumber;
+        int multiplication = firstNumber * secondNumber;
+        int division = firstNumber / secondNumber;
 
         // 100+50=150
         System.out.println(firstNumber + " + " + secondNumber + " = " + addition);

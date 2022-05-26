@@ -13,10 +13,10 @@ public class Carpet {
     }
 
 
-    public double calcCost(){
-        double totalPrice = (width*length)*unitPrice;
+    public double calcCost() {
+        double totalPrice = (width * length) * unitPrice;
 
-        if(isPersian){
+        if (isPersian) {
             totalPrice += 200;
         }
 

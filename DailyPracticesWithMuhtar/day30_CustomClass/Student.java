@@ -26,12 +26,12 @@ public class Student {
                 '}';
     }
 
-    public void code(){
-        System.out.println(name +" is coding");
+    public void code() {
+        System.out.println(name + " is coding");
     }
 
-    public void sleep(){
-        System.out.println(name+" is sleeping");
+    public void sleep() {
+        System.out.println(name + " is sleeping");
     }
 
 

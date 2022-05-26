@@ -1,6 +1,6 @@
 package day45_Abstraction.shape;
 
-public class Cube extends Shape implements Volume{
+public class Cube extends Shape implements Volume {
 
 
     public Cube(String name) {

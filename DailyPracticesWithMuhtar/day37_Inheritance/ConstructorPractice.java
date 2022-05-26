@@ -1,17 +1,17 @@
 package day37_Inheritance;
 
 
-class A{
+class A {
 
-    public A(int a){
+    public A(int a) {
         System.out.println("A");
     }
 
 }
 
-class B extends A{
+class B extends A {
 
-    public B(){
+    public B() {
         super(9);
         System.out.println("B");
     }

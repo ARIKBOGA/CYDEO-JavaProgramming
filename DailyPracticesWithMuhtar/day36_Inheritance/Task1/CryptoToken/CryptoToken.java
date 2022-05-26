@@ -1,8 +1,8 @@
 package day36_Inheritance.Task1.CryptoToken;
 
 public class CryptoToken {
-    private double price, quantity, marketCap, volume, circulatingSupply;
     boolean isMineable;
+    private double price, quantity, marketCap, volume, circulatingSupply;
 
     public void setInfo(double price, double quantity, double marketCap, double volume, double circulatingSupply, boolean isMineable) {
         this.price = price;
@@ -25,7 +25,7 @@ public class CryptoToken {
                 '}';
     }
 
-    public double totalPrice(){
+    public double totalPrice() {
         return price * quantity;
     }
 }

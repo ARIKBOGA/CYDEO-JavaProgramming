@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 class rectAngle {
     int size;
+
     rectAngle(int size) {
         this.size = size;
     }
+
     void print() {
         int space = size - 1;
         for (int i = 0; i < size; i++) {

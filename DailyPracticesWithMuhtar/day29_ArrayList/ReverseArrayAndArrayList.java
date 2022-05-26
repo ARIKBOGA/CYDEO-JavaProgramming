@@ -7,13 +7,13 @@ public class ReverseArrayAndArrayList {
 
     public static void main(String[] args) {
 
-        int[] array = {1,2,3,4,5,6};
+        int[] array = {1, 2, 3, 4, 5, 6};
 
         int[] result = new int[array.length];  // {6,5,4,3,2,1}
 
         int j = 0;
         for (int i = array.length - 1; i >= 0; i--, j++) {
-            result[j]  = array[i];
+            result[j] = array[i];
         }
 
         System.out.println(Arrays.toString(result));
@@ -21,7 +21,7 @@ public class ReverseArrayAndArrayList {
         System.out.println("---------------------------------------");
 
         ArrayList<Integer> list = new ArrayList<>();
-        list.addAll(Arrays.asList(1,2,3,4,5,6,7,8));
+        list.addAll(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8));
 
         ArrayList<Integer> reversedList = new ArrayList<>();
 
@@ -34,8 +34,6 @@ public class ReverseArrayAndArrayList {
 
 
         System.out.println(reversedList);
-
-
 
 
     }

@@ -9,8 +9,7 @@ public class CarObjects {
     public static void main(String[] args) {
 
 
-
-        Car car1  = new Car();
+        Car car1 = new Car();
         car1.setInfo("Inheritance.Toyota", "Camry", "White", 2021, 35000);
 
         System.out.println(car1);
@@ -31,10 +30,10 @@ public class CarObjects {
         // Inheritance.Car[] cars = { car1, car2, car3 };
 
         ArrayList<Car> carsList = new ArrayList<>();
-        carsList.addAll(Arrays.asList(car1, car2, car3)) ;
+        carsList.addAll(Arrays.asList(car1, car2, car3));
 
-        for(Car each  : carsList){
-            System.out.println( each.brand +" : "+each.price  );
+        for (Car each : carsList) {
+            System.out.println(each.brand + " : " + each.price);
         }
 
         System.out.println("------------------------------------------------------------");
@@ -45,9 +44,8 @@ public class CarObjects {
             Inheritance.Toyota: 1995 ~ 1997
          */
 
-        carsList.removeIf( p -> p.brand.equals("Inheritance.BMW") && p.year >= 2005 && p.year <= 2008 );
-        carsList.removeIf( p -> p.brand.equals("Inheritance.Toyota") && p.year >= 1995 && p.year <= 1997);
-
+        carsList.removeIf(p -> p.brand.equals("Inheritance.BMW") && p.year >= 2005 && p.year <= 2008);
+        carsList.removeIf(p -> p.brand.equals("Inheritance.Toyota") && p.year >= 1995 && p.year <= 1997);
 
 
     }

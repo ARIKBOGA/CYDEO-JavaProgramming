@@ -1,14 +1,15 @@
 package day38_Inheritance.Employee;
 
 public abstract class Employee {
-    protected String name, jobTitle, companyName;
-    protected int age, id, salary;
-    protected char gender;
     private static int ID;
 
     static {
         ID = 1;
     }
+
+    protected String name, jobTitle, companyName;
+    protected int age, id, salary;
+    protected char gender;
 
     public Employee(String name, String jobTitle, String companyName, int age, int salary, char gender) {
         this.name = name;

@@ -1,6 +1,6 @@
 package day38_Inheritance.Employee;
 
-public class BusinessAnalyst extends Employee{
+public class BusinessAnalyst extends Employee {
     public BusinessAnalyst(String name, String jobTitle, String companyName, int age, int salary, char gender) {
         super(name, jobTitle, companyName, age, salary, gender);
     }

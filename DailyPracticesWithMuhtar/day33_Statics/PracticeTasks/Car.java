@@ -1,12 +1,11 @@
 package day33_Statics.PracticeTasks;
 
 public class Car {
+    static int numberOfWheels = 4;
+    static boolean hasBattery = true, hasSeats = true;
     String make, model, color;
     int year;
     double price;
-
-    static int numberOfWheels = 4;
-    static boolean hasBattery = true, hasSeats = true;
 
     public Car(String make, String model, String color, int year, double price) {
         this.make = make;

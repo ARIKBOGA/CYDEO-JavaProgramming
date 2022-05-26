@@ -2,7 +2,6 @@ package day28_ArrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class ArrayListPractice {
     public static void main(String[] args) {

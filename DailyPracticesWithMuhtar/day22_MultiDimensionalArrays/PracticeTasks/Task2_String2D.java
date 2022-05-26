@@ -10,23 +10,23 @@ public class Task2_String2D {
         // 1
         for (String[] item : items) {
             for (String s : item) {
-                System.out.print(s+"\t");
+                System.out.print(s + "\t");
             }
             System.out.println();
         }
         System.out.println("\n---------------------------------------\n");
         // 2
         for (String[] item : items) {
-            for (int i = item.length-1; i >=0 ; i--) {
-                System.out.print(item[i]+"\t");
+            for (int i = item.length - 1; i >= 0; i--) {
+                System.out.print(item[i] + "\t");
             }
             System.out.println();
         }
         System.out.println("\n---------------------------------------\n");
         // 3
-        for (int i = items.length-1; i >=0 ; i--) {
+        for (int i = items.length - 1; i >= 0; i--) {
             for (int j = 0; j < items[i].length; j++) {
-                System.out.print(items[i][j]+"\t");
+                System.out.print(items[i][j] + "\t");
             }
             System.out.println();
         }

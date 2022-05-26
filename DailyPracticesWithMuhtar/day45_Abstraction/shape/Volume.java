@@ -2,9 +2,9 @@ package day45_Abstraction.shape;
 
 public interface Volume {
 
-    boolean hasVolume= true;
+    boolean hasVolume = true;
 
-     double volume();
+    double volume();
 
    /*
     default void drink(){

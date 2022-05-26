@@ -20,12 +20,20 @@ public class Item {
         return Character.isLetter(str.charAt(0));
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         if (name != null && !name.isEmpty() && isEligible(name)) {
             this.name = name;
         } else {
             System.out.println(name + " is an invalid entry for the name, please read the instructions");
         }
+    }
+
+    public double getUnitPrice() {
+        return unitPrice;
     }
 
     public void setUnitPrice(double unitPrice) {
@@ -36,6 +44,10 @@ public class Item {
         }
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
     public void setQuantity(int quantity) {
         if (quantity < 0) {
             System.out.println("The Quantity can not be less than 0");
@@ -44,19 +56,6 @@ public class Item {
         } else {
             this.quantity = quantity;
         }
-    }
-
-
-    public String getName() {
-        return name;
-    }
-
-    public double getUnitPrice() {
-        return unitPrice;
-    }
-
-    public int getQuantity() {
-        return quantity;
     }
 
     protected double calcCost() {

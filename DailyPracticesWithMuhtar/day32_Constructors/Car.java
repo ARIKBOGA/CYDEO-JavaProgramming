@@ -8,16 +8,16 @@ public class Car {
     public String color;
 
 
-    public Car(String brand){
+    public Car(String brand) {
         this.brand = brand;
     }
 
-    public Car(String brand, String model){
+    public Car(String brand, String model) {
         this(brand);
         this.model = model;
     }
 
-    public Car(String brand, String model, int year){
+    public Car(String brand, String model, int year) {
         this(brand, model);
         this.year = year;
     }

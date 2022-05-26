@@ -14,11 +14,19 @@ public abstract class Animal {
         setAge(age);
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         if (name != null && !name.isBlank() && !name.isEmpty())
             this.name = name;
         else
             System.out.println("Name can not be empty, blank or null.");
+    }
+
+    public String getBreed() {
+        return breed;
     }
 
     public void setBreed(String breed) {
@@ -28,11 +36,19 @@ public abstract class Animal {
             System.out.println("Breed can not be empty, blank or null.");
     }
 
+    public char getSize() {
+        return size;
+    }
+
     public void setSize(char size) {
         if (size == 'S' || size == 'M' || size == 'L')
             this.size = size;
         else
             System.out.println("Size can not be different from S,M and L.");
+    }
+
+    public String getColor() {
+        return color;
     }
 
     public void setColor(String color) {
@@ -42,6 +58,10 @@ public abstract class Animal {
             System.out.println("Color can not be empty, blank or null.");
     }
 
+    public char getGender() {
+        return gender;
+    }
+
     public void setGender(char gender) {
         if (gender == 'M' || gender == 'F')
             this.gender = gender;
@@ -49,33 +69,13 @@ public abstract class Animal {
             System.out.println("Gender con not be different from M or F");
     }
 
+    public int getAge() {
+        return age;
+    }
+
     public void setAge(int age) {
         if (age >= 0)
             this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getBreed() {
-        return breed;
-    }
-
-    public char getSize() {
-        return size;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public int getAge() {
-        return age;
     }
 
     public void drink() {
@@ -94,7 +94,6 @@ public abstract class Animal {
     abstract public void eat();
 
     abstract public void move();
-
 
 
     @Override

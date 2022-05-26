@@ -25,8 +25,8 @@ public abstract class Person {
     }
 
     public void setAge(int age) {
-        if(age <= 0){
-            throw new RuntimeException("Invalid age: "+age);
+        if (age <= 0) {
+            throw new RuntimeException("Invalid age: " + age);
         }
         this.age = age;
     }
@@ -42,8 +42,8 @@ public abstract class Person {
 
     public abstract void sleep();
 
-    public void eat(){
-        System.out.println(name+" is eating baklava");
+    public void eat() {
+        System.out.println(name + " is eating baklava");
     }
 
     @Override
@@ -54,7 +54,6 @@ public abstract class Person {
                 ", gender=" + gender +
                 '}';
     }
-
 
 
 }

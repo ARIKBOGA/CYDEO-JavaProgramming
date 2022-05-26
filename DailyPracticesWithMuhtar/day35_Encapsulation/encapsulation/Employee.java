@@ -17,22 +17,14 @@ public class Employee {
         return name;
     }
 
-    public char getGender() {
-        return gender;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
     public void setName(String name) {
         if (name != null && !name.isEmpty()) {
             this.name = name;
         }
+    }
+
+    public char getGender() {
+        return gender;
     }
 
     public void setGender(char gender) {
@@ -41,10 +33,18 @@ public class Employee {
         }
     }
 
+    public int getAge() {
+        return age;
+    }
+
     public void setAge(int age) {
         if (age >= 16 && age <= 90) {
             this.age = age;
         }
+    }
+
+    public double getSalary() {
+        return salary;
     }
 
     public void setSalary(double salary) {

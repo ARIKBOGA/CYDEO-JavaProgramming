@@ -12,7 +12,7 @@ public class UniqueCharacters {
 
         String[] arr = str.split("");
 
-        ArrayList<String> list = new ArrayList<>( Arrays.asList(arr) );
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(arr));
 
         System.out.println("list = " + list);
 
@@ -20,8 +20,8 @@ public class UniqueCharacters {
 
         for (String each : list) {
 
-            int frequency =  Collections.frequency(list, each);
-            if(frequency == 1){
+            int frequency = Collections.frequency(list, each);
+            if (frequency == 1) {
                 unique += each;
             }
 

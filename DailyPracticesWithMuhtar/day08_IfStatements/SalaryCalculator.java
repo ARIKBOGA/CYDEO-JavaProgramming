@@ -9,9 +9,9 @@ public class SalaryCalculator {
 
         int salaryBeforeTaxes = hourlyRate * weeklyHour * 52;
         double stateTax = salaryBeforeTaxes * stateTaxRate / 100;
-        double federalTax= salaryBeforeTaxes*federalTaxRate/100;
-        double totalTax=stateTax+federalTax;
-        double salaryAfterRaxes=salaryBeforeTaxes-totalTax;
+        double federalTax = salaryBeforeTaxes * federalTaxRate / 100;
+        double totalTax = stateTax + federalTax;
+        double salaryAfterRaxes = salaryBeforeTaxes - totalTax;
 
         System.out.println("salaryBeforeTaxes = " + salaryBeforeTaxes);
         System.out.println("stateTax = " + stateTax);

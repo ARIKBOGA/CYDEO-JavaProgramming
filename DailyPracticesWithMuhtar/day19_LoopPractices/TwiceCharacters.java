@@ -15,16 +15,16 @@ public class TwiceCharacters {
             }
             str = str.replace(str.substring(0, 1), "");
         }
-        System.out.println(!result.isEmpty() ? "Twice characters: "+result :"There is no Twice Character.");
+        System.out.println(!result.isEmpty() ? "Twice characters: " + result : "There is no Twice Character.");
         // Twice Consecutive
-        if(!result.isEmpty()){
+        if (!result.isEmpty()) {
             result = "";
             for (int i = 1; i < str2.length(); i++) {
-                if (str2.charAt(i) == str2.charAt(i-1)) {
+                if (str2.charAt(i) == str2.charAt(i - 1)) {
                     result += str2.charAt(i);
                 }
             }
-        System.out.println(!result.isEmpty() ? "\nConsecutive twice characters: " + result :"\nThere is no Consecutive Twice.");
+            System.out.println(!result.isEmpty() ? "\nConsecutive twice characters: " + result : "\nThere is no Consecutive Twice.");
         }
     }
 }

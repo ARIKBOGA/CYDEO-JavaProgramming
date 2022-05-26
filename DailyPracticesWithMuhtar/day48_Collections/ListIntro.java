@@ -46,10 +46,9 @@ public class ListIntro {
     }
 
 
-    public synchronized void method1(){
+    public synchronized void method1() {
 
     }
-
 
 
 }

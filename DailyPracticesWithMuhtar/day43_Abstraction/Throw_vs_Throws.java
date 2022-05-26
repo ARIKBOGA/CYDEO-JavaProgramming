@@ -9,20 +9,20 @@ public class Throw_vs_Throws {
         System.out.println("Enter your score:");
         int score = new Scanner(System.in).nextInt();
 
-        if(score < 0 || score > 100){
-            throw new RuntimeException("Invalid score: "+score); // exit(1)
+        if (score < 0 || score > 100) {
+            throw new RuntimeException("Invalid score: " + score); // exit(1)
         }
 
 
-        if(score >= 90){
+        if (score >= 90) {
             System.out.println("A");
-        }else if(score >= 80){
+        } else if (score >= 80) {
             System.out.println("B");
-        }else if(score >= 70){
+        } else if (score >= 70) {
             System.out.println("C");
-        }else if(score >= 60){
+        } else if (score >= 60) {
             System.out.println("D");
-        }else{
+        } else {
             System.out.println("F");
         }
 
@@ -34,8 +34,6 @@ public class Throw_vs_Throws {
     public static void method1() throws InterruptedException {
         Thread.sleep(5000);
     }
-
-
 
 
 }

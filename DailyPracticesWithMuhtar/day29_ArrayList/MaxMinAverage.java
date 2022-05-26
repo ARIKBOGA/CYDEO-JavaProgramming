@@ -24,11 +24,11 @@ public class MaxMinAverage {
         int sum = 0;
 
         for (Integer each : list) {
-            if(each > max){
+            if (each > max) {
                 max = each;
             }
 
-            if(each < min){
+            if (each < min) {
                 min = each;
             }
 
@@ -36,7 +36,7 @@ public class MaxMinAverage {
 
         }
 
-        double average =  (double)sum / list.size();
+        double average = (double) sum / list.size();
 
         System.out.println("max = " + max);
         System.out.println("min = " + min);

@@ -24,6 +24,6 @@ public class RoomReservation {
                 answer = scan.next();
             }
         } while (answer.equals("yes"));
-        System.out.println("Total bill is: "+total);
+        System.out.println("Total bill is: " + total);
     }
 }

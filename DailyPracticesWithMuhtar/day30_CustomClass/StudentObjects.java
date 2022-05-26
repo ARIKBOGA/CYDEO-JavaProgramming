@@ -13,13 +13,13 @@ public class StudentObjects {
         student2.setInfo("Hulya", 'F', 26, 2123, 'B');
 
         Student student3 = new Student();
-        student3.setInfo("Elminur", 'F',26,2215,'A');
+        student3.setInfo("Elminur", 'F', 26, 2215, 'A');
 
         Student student4 = new Student();
-        student4.setInfo("Ali", 'M',28,5511,'B');
+        student4.setInfo("Ali", 'M', 28, 5511, 'B');
 
         Student student5 = new Student();
-        student5.setInfo("Mert", 'M', 26 ,2252, 'C');
+        student5.setInfo("Mert", 'M', 26, 2252, 'C');
 
 
         Student[] students = {student1, student2, student3, student4, student5};
@@ -35,9 +35,9 @@ public class StudentObjects {
 
         for (Student student : students) {
 
-            if(student.grade == 'A'){
+            if (student.grade == 'A') {
                 earlyBirds.add(student);
-            }else{
+            } else {
                 angryBirds.add(student);
             }
 

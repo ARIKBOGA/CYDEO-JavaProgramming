@@ -17,8 +17,7 @@ public class Dog extends FriendlyAnimal {
     }
 
 
-
     public void bark() {
-        System.out.println(getTitle()+ " is barking so much, it might be hungry.");
+        System.out.println(getTitle() + " is barking so much, it might be hungry.");
     }
 }

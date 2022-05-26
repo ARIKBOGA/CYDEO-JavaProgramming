@@ -6,7 +6,7 @@ public class DogObjects {
 
     public static void main(String[] args) {
 
-        Dog dog1  = new Dog();
+        Dog dog1 = new Dog();
 
         dog1.name = "Lucy";
         dog1.breed = "Husky";
@@ -18,7 +18,7 @@ public class DogObjects {
 
         Dog dog2 = new Dog();
 
-        dog2.name = "ACE" ;
+        dog2.name = "ACE";
         dog2.breed = "Husky";
         dog2.age = 5;
         dog2.gender = 'M';
@@ -47,19 +47,16 @@ public class DogObjects {
         Dog[] dogs = {dog1, dog2, dog3, dog4, dog5};
 
 
-        ArrayList<Dog> femaleDogs =new ArrayList<>();
-        ArrayList<Dog> maleDogs =new ArrayList<>();
+        ArrayList<Dog> femaleDogs = new ArrayList<>();
+        ArrayList<Dog> maleDogs = new ArrayList<>();
 
         for (Dog dog : dogs) {
-            if(dog.gender=='M') maleDogs.add(dog);
+            if (dog.gender == 'M') maleDogs.add(dog);
             else femaleDogs.add(dog);
         }
 
         System.out.println("maleDogs = " + maleDogs);
         System.out.println("femaleDogs = " + femaleDogs);
-
-
-
 
 
     }

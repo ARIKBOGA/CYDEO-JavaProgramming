@@ -1,7 +1,5 @@
 package day41_Exceptions;
 
-import java.io.FileInputStream;
-
 public class Checked_vs_Unchecked {
     public static void main(String[] args) throws InterruptedException {
 

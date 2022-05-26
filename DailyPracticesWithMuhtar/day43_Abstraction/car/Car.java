@@ -3,8 +3,8 @@ package day43_Abstraction.car;
 public abstract class Car {
 
     private final String brand, model;
-    private String color;
     private final int year;
+    private String color;
     private double price;
 
     public Car(String brand, String model, String color, int year, double price) {
@@ -31,16 +31,16 @@ public abstract class Car {
         return color;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public int getYear() {
         return year;
     }
 
     public double getPrice() {
         return price;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public void setPrice(double price) {

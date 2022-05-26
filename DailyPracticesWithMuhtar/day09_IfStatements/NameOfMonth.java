@@ -41,7 +41,7 @@ public class NameOfMonth {
         if (!(num < 1 || num > 12)) {
             Month month = Month.of(num);
             System.out.println(month.name());
-        }else {
+        } else {
             System.out.println("Invalid !");
         }
     }

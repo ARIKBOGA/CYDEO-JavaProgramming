@@ -2,10 +2,10 @@ package day40_FinalKeyword;
 
 public class Animal {
 
-    private String name;
     private final String breed;
     private final char gender;
     private final String color;
+    private String name;
     private String size;
     private int age;
 
@@ -24,6 +24,10 @@ public class Animal {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getBreed() {
         return breed;
     }
@@ -40,19 +44,15 @@ public class Animal {
         return size;
     }
 
-    public int getAge() {
-        return age;
-    }
-
 
     //----------Setters---------------------
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setSize(String size) {
         this.size = size;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public void setAge(int age) {
@@ -63,15 +63,13 @@ public class Animal {
     //----------Setters---------------------
 
 
-    public void eat(){
-        System.out.println(name+" is eating");
+    public void eat() {
+        System.out.println(name + " is eating");
     }
 
-    public final void drink(){
-        System.out.println(name+" is drinking water");
+    public final void drink() {
+        System.out.println(name + " is drinking water");
     }
-
-
 
 
 }

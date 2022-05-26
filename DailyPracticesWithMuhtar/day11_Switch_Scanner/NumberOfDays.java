@@ -11,9 +11,9 @@ public class NumberOfDays {
 
         String result = "";
 
-        if(number >= 1 && number <= 12){ // number: 1~12
+        if (number >= 1 && number <= 12) { // number: 1~12
 
-            switch (number){
+            switch (number) {
                 case 2:
                     result = (year % 4 == 0) ? "29 days" : "28 days";
                     break;

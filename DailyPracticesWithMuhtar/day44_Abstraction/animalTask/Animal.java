@@ -2,26 +2,26 @@ package day44_Abstraction.animalTask;
 
 public abstract class Animal {
 
-    private String name;
-    private final String breed;
-    private final char gender;
-    private int age;
-    private String size;
-    private final String color;
-
     public final static boolean canBreathe;
 
-    static{
+    static {
         canBreathe = true;
     }
+
+    private final String breed;
+    private final char gender;
+    private final String color;
+    private String name;
+    private int age;
+    private String size;
 
     public Animal(String name, String breed, char gender, int age, String size, String color) {
         setName(name);
 
         this.breed = breed;
 
-        if ( !(gender == 'M' || gender =='F')){
-            throw new RuntimeException("Invalid gender: "+gender);
+        if (!(gender == 'M' || gender == 'F')) {
+            throw new RuntimeException("Invalid gender: " + gender);
         }
         this.gender = gender;
 
@@ -36,7 +36,7 @@ public abstract class Animal {
     }
 
     public void setName(String name) {
-        if(name.isEmpty()){
+        if (name.isEmpty()) {
             throw new RuntimeException("Invalid Name");
         }
         this.name = name;
@@ -70,16 +70,16 @@ public abstract class Animal {
         return color;
     }
 
-    public final void drink(){
-        System.out.println(name+" is drinking");
+    public final void drink() {
+        System.out.println(name + " is drinking");
     }
 
-    public  abstract void eat();
+    public abstract void eat();
 
 
     @Override
     public String toString() {
-        return getClass().getSimpleName()+"{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", gender=" + gender +

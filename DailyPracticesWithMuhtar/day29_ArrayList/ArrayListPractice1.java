@@ -6,12 +6,12 @@ import java.util.Arrays;
 public class ArrayListPractice1 {
 
     public static void main(String[] args) {
-        String[] countries = {"Japan", "Korea", "United States", "Turkey", "United Kingdom", "Canada", };
+        String[] countries = {"Japan", "Korea", "United States", "Turkey", "United Kingdom", "Canada",};
 
         // converting array to arraylist:
-        ArrayList<String> list = new ArrayList<>( Arrays.asList(countries) );
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(countries));
 
-        list.removeIf( p -> p.length() >= 10 );
+        list.removeIf(p -> p.length() >= 10);
 
         //converting arraylist to array
         countries = list.toArray(new String[0]);

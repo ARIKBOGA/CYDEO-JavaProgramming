@@ -13,12 +13,13 @@ public class Server {
         this.fullTime = fullTime;
     }
 
-    void takeOrder(){
-        System.out.println(name+" is taking an order");
+    void takeOrder() {
+        System.out.println(name + " is taking an order");
     }
-     void  cleanTable(){
-         System.out.println(name+" is cleaning the table");
-     }
+
+    void cleanTable() {
+        System.out.println(name + " is cleaning the table");
+    }
 
     @Override
     public String toString() {

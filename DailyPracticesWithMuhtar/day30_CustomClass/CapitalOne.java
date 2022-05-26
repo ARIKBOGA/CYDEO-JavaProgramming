@@ -1,6 +1,5 @@
 package day30_CustomClass;
 
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
 
@@ -14,14 +13,14 @@ public class CapitalOne {
         Employee employee4 = new Employee();
         Employee employee5 = new Employee();
 
-        employee1.setInfo("John",'M',25,2237,"Developer",100000,true);
-        employee2.setInfo("Anna",'F',28,2287,"QA",85000,true);
-        employee3.setInfo("David",'M',35,2256,"QA",45000,false);
-        employee4.setInfo("Lina",'F',45,2290,"Manager",80000,true);
-        employee5.setInfo("Kevin",'M',35,2298,"Senior QA", 110000,true);
+        employee1.setInfo("John", 'M', 25, 2237, "Developer", 100000, true);
+        employee2.setInfo("Anna", 'F', 28, 2287, "QA", 85000, true);
+        employee3.setInfo("David", 'M', 35, 2256, "QA", 45000, false);
+        employee4.setInfo("Lina", 'F', 45, 2290, "Manager", 80000, true);
+        employee5.setInfo("Kevin", 'M', 35, 2298, "Senior QA", 110000, true);
 
 
-        Employee[] employees = { employee1, employee2, employee3, employee4, employee5 };
+        Employee[] employees = {employee1, employee2, employee3, employee4, employee5};
 
         int countFullTime = 0;
         int countPartTime = 0;
@@ -30,17 +29,17 @@ public class CapitalOne {
 
         for (Employee employee : employees) {
 
-            if(employee.isFullTime){
+            if (employee.isFullTime) {
                 countFullTime++;
-            }else{
+            } else {
                 countPartTime++;
             }
 
-            if(employee.salary > max){
+            if (employee.salary > max) {
                 max = employee.salary;
             }
 
-            if(employee.salary < min){
+            if (employee.salary < min) {
                 min = employee.salary;
             }
 
@@ -53,15 +52,12 @@ public class CapitalOne {
         System.out.println("max = " + max);
 
 
-
-        Locale turkiye = new Locale("tr","tr");
+        Locale turkiye = new Locale("tr", "tr");
         NumberFormat lira = NumberFormat.getCurrencyInstance(turkiye);
         NumberFormat pound = NumberFormat.getCurrencyInstance(Locale.UK);
 
         System.out.println(lira.format(50));
         System.out.println(pound.format(90));
-
-
 
 
     }

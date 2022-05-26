@@ -22,21 +22,17 @@ public class FirstUniqueElements {
 
             int frequency = 0;
             for (Integer element : list) {
-                if(element == each){
+                if (element == each) {
                     frequency++;
                 }
             }
 
-            if(frequency == 1){
+            if (frequency == 1) {
                 System.out.println(each);
                 break;
             }
 
         }
-
-
-
-
 
 
     }

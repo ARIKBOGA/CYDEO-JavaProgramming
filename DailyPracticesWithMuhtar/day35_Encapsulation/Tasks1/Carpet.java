@@ -11,27 +11,37 @@ public class Carpet {
         setPersian(isPersian);
     }
 
+    public double getWidth() {
+        return width;
+    }
+
     public void setWidth(double width) {
         if (width > 0) this.width = width;
+    }
+
+    public double getLength() {
+        return length;
     }
 
     public void setLength(double length) {
         if (length > 0) this.length = length;
     }
 
+    public double getUnitPrice() {
+        return unitPrice;
+    }
+
     public void setUnitPrice(double unitPrice) {
         if (unitPrice > 0) this.unitPrice = unitPrice;
     }
 
-    public void setPersian(boolean persian) {isPersian = persian;}
+    public boolean isPersian() {
+        return isPersian;
+    }
 
-    public double getWidth() {return width;}
-
-    public double getLength() {return length;}
-
-    public double getUnitPrice() {return unitPrice;}
-
-    public boolean isPersian() {return isPersian;}
+    public void setPersian(boolean persian) {
+        isPersian = persian;
+    }
 
     public double calcCost() {
         double cost = width * length * unitPrice;

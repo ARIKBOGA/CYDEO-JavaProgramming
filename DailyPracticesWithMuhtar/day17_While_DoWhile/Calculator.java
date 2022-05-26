@@ -17,7 +17,7 @@ public class Calculator {
             System.out.print("Enter a Math operator: ");
             opr = scan.nextLine().charAt(0);
         } while (!oprerations.contains(String.valueOf(opr)));
-        System.out.println( firstNumber + " " + opr + " " + secondNumber + " = " +
+        System.out.println(firstNumber + " " + opr + " " + secondNumber + " = " +
                 (opr == '+' ? firstNumber + secondNumber : opr == '-' ? firstNumber - secondNumber :
                         opr == '*' ? firstNumber * secondNumber :
                                 firstNumber / secondNumber));

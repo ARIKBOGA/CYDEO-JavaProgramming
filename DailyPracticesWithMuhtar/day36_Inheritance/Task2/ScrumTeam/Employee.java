@@ -1,10 +1,10 @@
 package day36_Inheritance.Task2.ScrumTeam;
 
 public class Employee extends Person {
+    private static int ID = 1;
     private final int id;
     private String jobTitle;
     private double salary;
-    private static int ID = 1;
 
     public Employee(String name, char gender, int age, String jobTitle, double salary) {
         super(name, gender, age);

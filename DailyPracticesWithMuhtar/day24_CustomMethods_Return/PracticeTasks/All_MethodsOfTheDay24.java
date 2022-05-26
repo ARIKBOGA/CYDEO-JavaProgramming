@@ -3,8 +3,8 @@ package day24_CustomMethods_Return.PracticeTasks;
 
 import java.util.Arrays;
 
-import static R06_Methods.MethodsWithString_Reverse.reverse;
 import static R06_Methods.Anagram.isAnagram;
+import static R06_Methods.MethodsWithString_Reverse.reverse;
 import static day22_MultiDimensionalArrays.PracticeTasks.Task1_Reverse2D_SwappingAlgorithm.reverseArray;
 // These are the methods I wrote in replit tasks before in the same project on my Intellij.
 // Since I have defined it as public and static,

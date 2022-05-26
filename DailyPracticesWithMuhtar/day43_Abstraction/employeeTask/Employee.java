@@ -1,6 +1,6 @@
 package day43_Abstraction.employeeTask;
 
-public abstract class Employee extends Person{
+public abstract class Employee extends Person {
 
     private final int id;
     private String jobTitle;
@@ -8,8 +8,8 @@ public abstract class Employee extends Person{
 
     public Employee(String name, int age, char gender, int id, String jobTitle, double salary) {
         super(name, age, gender);
-        if(id <= 0){
-            throw new RuntimeException("Invalid ID: "+id);
+        if (id <= 0) {
+            throw new RuntimeException("Invalid ID: " + id);
         }
         this.id = id;
         setJobTitle(jobTitle);

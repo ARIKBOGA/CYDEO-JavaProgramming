@@ -3,6 +3,19 @@ package day45_Abstraction;
 import java.util.ArrayList;
 import java.util.List;
 
+interface Z {
+    Integer num = 0;
+
+}
+
+interface X {
+
+}
+
+interface Y extends X, Z {
+
+}
+
 //extends:
 class C {
 
@@ -13,20 +26,6 @@ class A {
 }
 
 class B extends A {
-
-}
-
-
-interface Z {
-     Integer num = 0;
-
-}
-
-interface X {
-
-}
-
-interface Y extends X, Z {
 
 }
 

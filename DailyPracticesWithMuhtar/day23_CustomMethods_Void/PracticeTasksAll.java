@@ -112,11 +112,11 @@ public class PracticeTasksAll {
     }
 
     public static void fullName(String n, String s) {
-        System.out.println("Full name: "+n.substring(0, 1).toUpperCase() + n.substring(1).toLowerCase() +
+        System.out.println("Full name: " + n.substring(0, 1).toUpperCase() + n.substring(1).toLowerCase() +
                 " " + s.substring(0, 1).toUpperCase() + s.substring(1).toLowerCase());
     }
 
-    private static void isAnagram(String f, String s){
+    private static void isAnagram(String f, String s) {
         char[] c1 = f.toCharArray();
         char[] c2 = s.toCharArray();
         Arrays.sort(c1);
@@ -124,6 +124,7 @@ public class PracticeTasksAll {
         System.out.println(Arrays.equals(c1, c2) ? "The given strings are anagram" :
                 "The given strings are not anagram");
     }
+
     public static void main(String[] args) {
         printOddNumbers(1, 11);
         printEvenNumbers(11, 20);
@@ -140,6 +141,6 @@ public class PracticeTasksAll {
         printEachElement(new int[]{1, 2, 3, 4});
         calculator(5, 3, '%');
         fullName("cYdEo", "SCHOOL");
-        isAnagram("silent","listen");
+        isAnagram("silent", "listen");
     }
 }

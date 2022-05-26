@@ -2,7 +2,7 @@ package day36_Inheritance.Task1.Phone;
 
 public class IPhone extends Phone {
 
-    public IPhone( String model, String color, double size, double price) {
+    public IPhone(String model, String color, double size, double price) {
         super("Apple", model, color, size, price);
     }
 

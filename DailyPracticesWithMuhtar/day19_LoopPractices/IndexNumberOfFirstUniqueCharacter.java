@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class IndexNumberOfFirstUniqueCharacter {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int[] array = {3,4,6,0,3,1};
+        int[] array = {3, 4, 6, 0, 3, 1};
         System.out.println(Arrays.toString(array));
         String str = scan.nextLine().toLowerCase();
         for (int i = 0; i < str.length(); i++) {

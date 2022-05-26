@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class GradeReportWithString {
     public static void main(String[] args) {
 
-        String explore= new Scanner(System.in).nextLine();
+        String explore = new Scanner(System.in).nextLine();
         char a = 'A';
 
         if (a == 'A') {

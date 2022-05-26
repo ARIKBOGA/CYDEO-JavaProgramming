@@ -6,7 +6,7 @@ public class BankAccount {
     public long accountNumber;
     public double balance;
 
-    public void setInfo(String accountHolder, long accountNumber){
+    public void setInfo(String accountHolder, long accountNumber) {
         this.accountHolder = accountHolder;
         this.accountNumber = accountNumber;
     }
@@ -19,12 +19,12 @@ public class BankAccount {
                 '}';
     }
 
-    public void checkBalance(){
-        System.out.println("Your available balance is: "+ balance);
+    public void checkBalance() {
+        System.out.println("Your available balance is: " + balance);
     }
 
-    public void deposit(double amount){
-        if(amount <= 0){
+    public void deposit(double amount) {
+        if (amount <= 0) {
             System.out.println("Depositing amount can not be zero or negative");
             return; // exits the method
         }
@@ -32,20 +32,19 @@ public class BankAccount {
         balance += amount;
     }
 
-    public void withdraw(double amount){
-        if(amount > balance){ // if withdrawing amount is greater than available balance
+    public void withdraw(double amount) {
+        if (amount > balance) { // if withdrawing amount is greater than available balance
             System.out.println("Insufficient balance");
             return;
         }
 
-        if(amount <= 0){ // if withdrawing amount is negative or zero
+        if (amount <= 0) { // if withdrawing amount is negative or zero
             System.out.println("Withdrawing amount can not be negative or zero");
             return;
         }
 
         balance -= amount;
     }
-
 
 
 }

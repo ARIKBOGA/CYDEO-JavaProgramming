@@ -1,6 +1,6 @@
 package day38_Inheritance.Browser;
 
-public class Firefox extends Browser{
+public class Firefox extends Browser {
     protected void openBrowser() {
         System.out.println("Openning Firefox browser.");
     }

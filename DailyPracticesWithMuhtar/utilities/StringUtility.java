@@ -42,11 +42,11 @@ public class StringUtility {
     }
 
     //removes the duplictes from the given string, returns a new string
-    public static String removeDuplicates(String s){
-        String result="";
-        while (s.length()>0){
-            result+=s.substring(0,1);
-            s = s.replace(s.substring(0,1),"");
+    public static String removeDuplicates(String s) {
+        String result = "";
+        while (s.length() > 0) {
+            result += s.substring(0, 1);
+            s = s.replace(s.substring(0, 1), "");
         }
         return result;
     }

@@ -1,6 +1,8 @@
 package day33_Statics.PracticeTasks;
 
 public class CydeoStudent {
+    static String schoolName;
+    static String programmingLanguage;
     String name;
     int age;
     char gender;
@@ -9,9 +11,6 @@ public class CydeoStudent {
     String batchNumber;
     int groupNumber;
     boolean isBusy;
-
-    static String schoolName;
-    static String programmingLanguage;
 
     public CydeoStudent(String name, int age, char gender, int id, char grade, String batchNumber, int groupNumber, boolean isBusy) {
         this.name = name;
@@ -22,6 +21,14 @@ public class CydeoStudent {
         this.batchNumber = batchNumber;
         this.groupNumber = groupNumber;
         this.isBusy = isBusy;
+    }
+
+    static void printSchoolName() {
+        System.out.println(schoolName);
+    }
+
+    static void printProgLanguage() {
+        System.out.println(programmingLanguage);
     }
 
     void study() {
@@ -43,13 +50,5 @@ public class CydeoStudent {
                 ", groupNumber=" + groupNumber +
                 ", isBusy=" + isBusy +
                 '}';
-    }
-
-    static void printSchoolName() {
-        System.out.println(schoolName);
-    }
-
-    static void printProgLanguage() {
-        System.out.println(programmingLanguage);
     }
 }

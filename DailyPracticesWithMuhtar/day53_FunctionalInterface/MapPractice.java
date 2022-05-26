@@ -1,6 +1,9 @@
 package day53_FunctionalInterface;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MapPractice {
 
@@ -44,8 +47,7 @@ public class MapPractice {
         unit6.put("Collection", 9.5);
         unit6.put("Map", 7.5);
 
-        List<Map<String, Double>> allUnits = new ArrayList<>();
-        allUnits.addAll(Arrays.asList(unit1, unit2, unit3, unit4, unit5, unit6));
+        List<Map<String, Double>> allUnits = new ArrayList<>(List.of(unit1, unit2, unit3, unit4, unit5, unit6));
 
         // 1. Display each Java topic and its hours on the console
 
@@ -108,7 +110,6 @@ public class MapPractice {
 
         System.out.println("name2 = " + name2);
         System.out.println("min = " + min);
-
 
     }
 

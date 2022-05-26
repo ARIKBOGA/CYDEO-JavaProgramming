@@ -40,6 +40,5 @@ public class TernariesIntro {
                 : "Invalid Entering !");
 
 
-
     }
 }

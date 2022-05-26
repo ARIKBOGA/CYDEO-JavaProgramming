@@ -1,6 +1,6 @@
 package day39_Recap.PracticeTasks.Animal;
 
-public class Crocodile extends WildAnimal{
+public class Crocodile extends WildAnimal {
     public Crocodile(String name, String breed, char size, String color, char gender, int age) {
         super(name, breed, size, color, gender, age);
     }

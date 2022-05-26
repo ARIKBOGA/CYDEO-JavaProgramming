@@ -16,7 +16,6 @@ public class ArrayListIntro {
         System.out.println("size: " + numbers.size());
 
 
-
     }
 
 

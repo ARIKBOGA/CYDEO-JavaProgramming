@@ -19,12 +19,12 @@ public class Car {
     }
 
 
-    public void start(){
-        System.out.println(brand +" "+ model + " is starting");
+    public void start() {
+        System.out.println(brand + " " + model + " is starting");
     }
 
-    public void drive(){
-        System.out.println(brand +" "+ model + " is driving");
+    public void drive() {
+        System.out.println(brand + " " + model + " is driving");
     }
 
 

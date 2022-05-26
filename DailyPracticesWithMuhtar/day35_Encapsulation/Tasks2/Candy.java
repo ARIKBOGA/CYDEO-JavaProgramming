@@ -17,28 +17,28 @@ public class Candy {
         return brand;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public boolean isHasPeanuts() {
-        return hasPeanuts;
-    }
-
     public void setBrand(String brand) {
         if (brand != null) this.brand = brand;
+    }
+
+    public int getQuantity() {
+        return quantity;
     }
 
     public void setQuantity(int quantity) {
         if (quantity > 0) this.quantity = quantity;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
     public void setPrice(double price) {
         if (price >= 0) this.price = price;
+    }
+
+    public boolean isHasPeanuts() {
+        return hasPeanuts;
     }
 
     public void setHasPeanuts(boolean hasPeanuts) {

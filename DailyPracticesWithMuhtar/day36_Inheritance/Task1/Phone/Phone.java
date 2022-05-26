@@ -4,18 +4,20 @@ public class Phone {
     private String brand, model, color;
     private double size, price;
 
-    public String getBrand() {
-        return brand;
-    }
-
-    public String getModel() {return model;}
-
     public Phone(String brand, String model, String color, double size, double price) {
         this.brand = brand != null ? brand : "";
         this.model = model != null ? model : "";
         this.color = color != null ? color : "";
         this.price = price > 0 ? price : 0;
         this.size = (size > 5.0 && size < 8.0) ? size : 0;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
     }
 
     public void call(long phoneNumber) {

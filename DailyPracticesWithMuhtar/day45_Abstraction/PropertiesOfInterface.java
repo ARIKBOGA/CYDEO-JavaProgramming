@@ -23,28 +23,28 @@ public interface PropertiesOfInterface {
     }
      */
 
-    static void method2(){
+    static void method2() {
         System.out.println("Static method");
     }
 
     void method3();
 
-    default void method4(){
+    default void method4() {
         System.out.println("Default method");
     }
 
 }
 
-class Test implements PropertiesOfInterface{
-
-    @Override
-    public void method3() {
-
-    }
+class Test implements PropertiesOfInterface {
 
     public static void main(String[] args) {
 
         new Test().method4();
+
+    }
+
+    @Override
+    public void method3() {
 
     }
 

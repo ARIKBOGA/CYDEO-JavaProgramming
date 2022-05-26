@@ -1,14 +1,26 @@
 package day47_Polymorphism;
 
+interface Drivable {
+    void drive();
+
+    String getName();
+}
+
+interface Flyable {
+    void fly();
+
+    void drive();
+}
+
 public class Sample {
 
-    public static void method1(){
+    public static void method1() {
         Car c = new WesleyFamilyCar();
         ((WesleyFamilyCar) c).fly();
         c.drive();
     }
 
-    public static void method2(){
+    public static void method2() {
         Flyable c = new WesleyFamilyCar();
         c.fly();
         c.drive();
@@ -18,17 +30,6 @@ public class Sample {
         method1();
         method2();
     }
-}
-
-interface Drivable {
-    void drive();
-    String getName();
-}
-
-interface Flyable {
-    void fly();
-
-    void drive();
 }
 
 class Car implements Drivable {

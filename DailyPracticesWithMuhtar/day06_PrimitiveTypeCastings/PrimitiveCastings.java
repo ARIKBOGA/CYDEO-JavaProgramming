@@ -10,6 +10,6 @@ public class PrimitiveCastings {
         float f = 87782346.5F;
         double d = 534254523534.65;
 
-        short x= (short) 10.445;
+        short x = (short) 10.445;
     }
 }

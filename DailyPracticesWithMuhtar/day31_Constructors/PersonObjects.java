@@ -14,8 +14,6 @@ public class PersonObjects {
         System.out.println(person2);
 
 
-
-
     }
 
 

@@ -8,21 +8,21 @@ public class Employee {
     public double salary;
 
 
-    public Employee(String name){
+    public Employee(String name) {
         this.name = name;
     }
 
-    public Employee(String name, char gender){
+    public Employee(String name, char gender) {
         this(name); //this.name = name;
         this.gender = gender;
     }
 
-    public Employee(String name, char gender, String jobTitle){
+    public Employee(String name, char gender, String jobTitle) {
         this(name, gender);
         this.jobTitle = jobTitle;
     }
 
-    public Employee(String name, char gender, String jobTitle, double salary){
+    public Employee(String name, char gender, String jobTitle, double salary) {
         this(name, gender, jobTitle);
         this.salary = salary;
     }

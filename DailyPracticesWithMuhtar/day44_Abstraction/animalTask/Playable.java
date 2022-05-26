@@ -12,7 +12,7 @@ public interface Playable {
 
     void play(); // abstract by default
 
-    default void method2(){
+    default void method2() {
         System.out.println("Default method");
     }
 

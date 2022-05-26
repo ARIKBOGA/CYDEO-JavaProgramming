@@ -3,7 +3,7 @@ package utilities;
 import java.util.Arrays;
 
 public class ArraysUtility {
-    public static <T>void printEachElement(T[] arr) {
+    public static <T> void printEachElement(T[] arr) {
         for (T i : arr) {
             System.out.print(i + " ");
         }

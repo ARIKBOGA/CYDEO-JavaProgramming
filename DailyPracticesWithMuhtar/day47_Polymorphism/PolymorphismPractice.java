@@ -28,20 +28,20 @@ public class PolymorphismPractice {
         };
 
 
-        for(Car eachCar  : cars ){
+        for (Car eachCar : cars) {
 
-            if(eachCar instanceof Toyota){
-                if(eachCar.year >= 2010 && eachCar.year <= 2011){
+            if (eachCar instanceof Toyota) {
+                if (eachCar.year >= 2010 && eachCar.year <= 2011) {
                     System.out.println(eachCar);
                 }
             }
 
-            if(eachCar instanceof BMW){
+            if (eachCar instanceof BMW) {
                 System.out.println(eachCar);
             }
 
-            if(eachCar instanceof Tesla){
-                if(eachCar.year >= 2015 && eachCar.year <= 2016){
+            if (eachCar instanceof Tesla) {
+                if (eachCar.year >= 2015 && eachCar.year <= 2016) {
                     System.out.println(eachCar);
                 }
             }
@@ -51,21 +51,21 @@ public class PolymorphismPractice {
 
 
         System.out.println("---------------------------------------------------------");
-       // 1.2 Write a program that can display the car that has the highest mileage
-       // 1.3 Write a program that can display the car that has the lowest mileage
+        // 1.2 Write a program that can display the car that has the highest mileage
+        // 1.3 Write a program that can display the car that has the lowest mileage
 
 
         Car carWithHighestMileage = cars[0],
-                carWithLowestMileage =  cars[0];
+                carWithLowestMileage = cars[0];
 
 
         for (Car eachCar : cars) {
-            if(eachCar.miles > carWithHighestMileage.miles){
+            if (eachCar.miles > carWithHighestMileage.miles) {
                 carWithHighestMileage = eachCar;
             }
 
-            if(eachCar.miles < carWithLowestMileage.miles){
-               carWithLowestMileage = eachCar;
+            if (eachCar.miles < carWithLowestMileage.miles) {
+                carWithLowestMileage = eachCar;
             }
 
         }

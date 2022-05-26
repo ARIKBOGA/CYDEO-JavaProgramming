@@ -1,11 +1,11 @@
 package day36_Inheritance.Task1.Employee;
 
 public class Employee {
+    private static int ID = 1;
     private String name, jobTitle;
     private char gender;
     private int id, age;
     private double salary;
-    private static int ID = 1;
 
     public Employee(String name, String jobTitle, char gender, int age, double salary) {
         this.name = name != null ? name : "";
@@ -16,9 +16,10 @@ public class Employee {
         this.salary = salary;
     }
 
-    public double getSalary(){
+    public double getSalary() {
         return salary;
     }
+
     public String getName() {
         return name;
     }

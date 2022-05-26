@@ -16,15 +16,15 @@ public class RemovePalindromes {
 
         Iterator<String> it = names.iterator();
 
-        while(it.hasNext()){
+        while (it.hasNext()) {
             String each = it.next();
             String reverse = "";
 
-            for(int i = each.length()-1; i >= 0; i--){
+            for (int i = each.length() - 1; i >= 0; i--) {
                 reverse += each.charAt(i);
             }
 
-            if(each.equalsIgnoreCase(reverse)){
+            if (each.equalsIgnoreCase(reverse)) {
                 it.remove();
             }
         }
@@ -60,8 +60,6 @@ public class RemovePalindromes {
 
         System.out.println(names2);
         */
-
-
 
 
     }

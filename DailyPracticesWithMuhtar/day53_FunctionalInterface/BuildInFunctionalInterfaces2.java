@@ -4,6 +4,7 @@ import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
+import java.util.stream.Collectors;
 
 public class BuildInFunctionalInterfaces2 {
 
@@ -99,11 +100,8 @@ public class BuildInFunctionalInterfaces2 {
 
         BiFunction<int[], int[], List<Integer>> merge = (x, y) -> {
             List<Integer> result = new ArrayList<>();
-
-            for (int each : x) result.add(each);
-
-            for (int each : y) result.add(each);
-
+            result.addAll(Arrays.stream(x).boxed().collect(Collectors.toList()));
+            result.addAll(Arrays.stream(y).boxed().collect(Collectors.toList()));
             return result;
         };
 
@@ -111,6 +109,7 @@ public class BuildInFunctionalInterfaces2 {
         int[] arr2 = {6, 7, 8};
 
         List<Integer> nums = merge.apply(arr1, arr2);
+        System.out.println("nums = " + nums);
 
         System.out.println("---------------------------------------");
         // 3. create a function that takes a  list of String and a list of Integer and merge them into a map

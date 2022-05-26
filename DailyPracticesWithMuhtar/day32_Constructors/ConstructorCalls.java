@@ -3,17 +3,17 @@ package day32_Constructors;
 public class ConstructorCalls {
 
 
-    public ConstructorCalls(){
+    public ConstructorCalls() {
         System.out.println("Default Constructor");
     }
 
-    public ConstructorCalls(int a){
+    public ConstructorCalls(int a) {
         this(); // Default Constructor
         System.out.println("Constructor with int argument");
     }
 
 
-    public ConstructorCalls(String str){
+    public ConstructorCalls(String str) {
         this(10); //Default Constructor ,  Constructor with int argument
         System.out.println("Constructor with String argument");
     }
@@ -29,13 +29,10 @@ public class ConstructorCalls {
 
         System.out.println("----------------------------");
 
-        ConstructorCalls obj3= new ConstructorCalls("Java");
+        ConstructorCalls obj3 = new ConstructorCalls("Java");
 
 
     }
-
-
-
 
 
 }

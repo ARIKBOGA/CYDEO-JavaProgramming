@@ -13,7 +13,7 @@ public class StudentGrades {
             else grades[i] = 'F';
         }
         for (int i = 0; i < names.length; i++) {
-            System.out.println(names[i]+"'s score is "+scores[i]+" and grade is "+grades[i]);
+            System.out.println(names[i] + "'s score is " + scores[i] + " and grade is " + grades[i]);
         }
     }
 }

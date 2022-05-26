@@ -14,7 +14,7 @@ public class ArithmeticOperators {
 
         int i = 100;
         double d = i / 6;
-        double x= i/6.0;
+        double x = i / 6.0;
         System.out.println("x = " + x);
         System.out.println("d = " + d);
     }

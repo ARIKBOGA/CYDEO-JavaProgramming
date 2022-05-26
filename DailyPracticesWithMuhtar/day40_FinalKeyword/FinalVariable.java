@@ -2,12 +2,13 @@ package day40_FinalKeyword;
 
 public class FinalVariable {
 
-    final String birthDay;
     final static String name;
 
-    static{
+    static {
         name = "Batch 25";
     }
+
+    final String birthDay;
 
     public FinalVariable(String birthDay) {
         this.birthDay = birthDay;

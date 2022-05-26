@@ -1,17 +1,5 @@
 package day45_Abstraction;
 
-abstract class Man {
-    public abstract String lastName();
-
-    public int defaultMethod() {
-        return 1;
-    }
-
-    public static int staticMethod() {
-        return 11;
-    }
-}
-
 interface Parent {
     float PI = 3.14F;
 
@@ -39,16 +27,23 @@ interface OtherParent {
 interface Child extends Parent, OtherParent {
 }
 
+abstract class Man {
+    public static int staticMethod() {
+        return 11;
+    }
+
+    public abstract String lastName();
+
+    public int defaultMethod() {
+        return 1;
+    }
+}
+
 /**
  * There cannot be a default method or instance variable with the same name
  * in implemented interfaces at the same time.
  */
 public class TestBurak extends Man implements Child {
-    @Override
-    public String lastName() {
-        return "Arıkboğa";
-    }
-
     public static void main(String[] args) {
 
         /*
@@ -79,5 +74,10 @@ public class TestBurak extends Man implements Child {
         // Interface's static methods can only be accessed via own Interface name
         // Child.staticMethod(); // this code line gives error as "Static method may be invoked on containing interface only"
         System.out.println(OtherParent.staticMethod());
+    }
+
+    @Override
+    public String lastName() {
+        return "Arıkboğa";
     }
 }

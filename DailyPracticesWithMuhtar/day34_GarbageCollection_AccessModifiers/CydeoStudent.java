@@ -1,15 +1,16 @@
 package day34_GarbageCollection_AccessModifiers;
 
 public class CydeoStudent {
-    String name;
     static String schoolName;
-
-    public CydeoStudent(String name) {
-        this.name = name;
-    }
 
     static {
         schoolName = "Cydeo School";
+    }
+
+    String name;
+
+    public CydeoStudent(String name) {
+        this.name = name;
     }
 
 

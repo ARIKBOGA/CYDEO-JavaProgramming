@@ -17,28 +17,28 @@ public class ScrumTeam {
         this.daysOfSprint = daysOfSprint;
     }
 
-    public void addTester(Tester tester){
-        testersList.add( tester );
+    public void addTester(Tester tester) {
+        testersList.add(tester);
     }
 
-    public void addTesters(Tester[] testers){
-        testersList.addAll( Arrays.asList(testers) );
+    public void addTesters(Tester[] testers) {
+        testersList.addAll(Arrays.asList(testers));
     }
 
-    public void addDeveloper(Developer developer){
-        devopsList.add( developer );
+    public void addDeveloper(Developer developer) {
+        devopsList.add(developer);
     }
 
-    public void addDevelopers(Developer[] developers){
-        devopsList.addAll( Arrays.asList(developers) );
+    public void addDevelopers(Developer[] developers) {
+        devopsList.addAll(Arrays.asList(developers));
     }
 
-    public void removeTester(int employeeID){
-        testersList.removeIf( p ->  p.employeeID == employeeID );
+    public void removeTester(int employeeID) {
+        testersList.removeIf(p -> p.employeeID == employeeID);
     }
 
-    public void removeDeveloper(int employeeID){
-        devopsList.removeIf( p -> p.employeeID == employeeID);
+    public void removeDeveloper(int employeeID) {
+        devopsList.removeIf(p -> p.employeeID == employeeID);
     }
 
     public String toString() {
@@ -51,9 +51,6 @@ public class ScrumTeam {
                 ", daysOfSprint=" + daysOfSprint +
                 '}';
     }
-
-
-
 
 
 }

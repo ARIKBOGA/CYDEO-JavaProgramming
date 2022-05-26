@@ -27,11 +27,11 @@ public class NameOfDay {
             System.out.println("Invalid entering !");
         }
         // here is the another approach to solve this problem with using DayOfWeek Enum class
-        Locale tr = new Locale("tr","tr");
+        Locale tr = new Locale("tr", "tr");
         if (!(num < 1 || num > 7)) {
             DayOfWeek day = DayOfWeek.of(num);
-            System.out.println(day.name().charAt(0)+day.name().substring(1).toLowerCase(Locale.ENGLISH));
-            System.out.println(day.name().charAt(0)+day.name().substring(1).toLowerCase(tr));
+            System.out.println(day.name().charAt(0) + day.name().substring(1).toLowerCase(Locale.ENGLISH));
+            System.out.println(day.name().charAt(0) + day.name().substring(1).toLowerCase(tr));
         }
     }
 }

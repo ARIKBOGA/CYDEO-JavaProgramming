@@ -4,18 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Person {
+    static final boolean isHuman = true;
+    static final boolean hasWings = false;
+    static final int numberOfHead = 1;
+    static boolean hasNose = true;
+    static int numberOfEyes = 2;
     String name;
     int age;
     char gender;
     List<String> eatens = new ArrayList<>();
     List<String> drinkens = new ArrayList<>();
     List<String> tasks = new ArrayList<>();
-
-    static final boolean isHuman = true;
-    static final boolean hasWings = false;
-    static final int numberOfHead = 1;
-    static boolean hasNose = true;
-    static int numberOfEyes = 2;
 
     public Person(String name, int age, char gender) {
         this.name = name;

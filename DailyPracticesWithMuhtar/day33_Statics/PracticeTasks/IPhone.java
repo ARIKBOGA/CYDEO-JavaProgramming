@@ -6,12 +6,11 @@ import java.util.Map;
 
 
 public class IPhone {
+    static String brand = "Apple";
+    static String OS = "Azul", madeIn = "China";
     String model, color;
     double price, size;
     Map<String, LocalDateTime> callLogs = new HashMap<>();
-
-    static String brand = "Apple";
-    static String OS = "Azul", madeIn = "China";
 
     public IPhone(String model, String color, double price, double size) {
         this.model = model;

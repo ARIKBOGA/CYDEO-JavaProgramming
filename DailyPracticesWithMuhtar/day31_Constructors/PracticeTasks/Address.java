@@ -12,13 +12,13 @@ public class Address {
         this.zipCode = zipCode;
     }
 
+    public static void main(String[] args) {
+        Address ad = new Address("Mclean", "Jones Branch Dr", "VA", 7925, 22012);
+        System.out.println(ad);
+    }
+
     @Override
     public String toString() {
         return buildingNumber + " " + street + "\n" + city + " " + state + ", " + zipCode;
-    }
-
-    public static void main(String[] args) {
-        Address ad = new Address("Mclean", "Jones Branch Dr","VA",7925,22012);
-        System.out.println(ad);
     }
 }

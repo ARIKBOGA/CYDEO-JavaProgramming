@@ -6,10 +6,10 @@ import java.util.Arrays;
 public class ArrayListPractice2 {
 
     public static void main(String[] args) {
-        ArrayList<String> employees =new ArrayList<>();
+        ArrayList<String> employees = new ArrayList<>();
         employees.addAll(Arrays.asList("Ali", "David", "Ahmed", "Jimmy", "Daniel", "Aaron", "Ahmed", "David", "Shay"));
 
-        employees.retainAll( Arrays.asList("Ahmed", "David") );
+        employees.retainAll(Arrays.asList("Ahmed", "David"));
 
         System.out.println(employees);
 
@@ -17,16 +17,13 @@ public class ArrayListPractice2 {
 
         String[] names = {"Mary", "Monica", "Mehray", "Musti", "Sumeyra", "Hasan", "Beril"};
 
-        ArrayList<String> list = new ArrayList<>( Arrays.asList(names) );
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(names));
 
-        list.removeIf( p -> p.charAt(0) == 'M' );
+        list.removeIf(p -> p.charAt(0) == 'M');
 
         names = list.toArray(new String[0]);
 
         System.out.println(Arrays.toString(names));
-
-
-
 
 
     }

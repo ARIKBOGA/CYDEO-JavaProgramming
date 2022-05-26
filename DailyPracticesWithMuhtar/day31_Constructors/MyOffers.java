@@ -32,23 +32,20 @@ public class MyOffers {
 
         Offer[] myOffers = {offer1, offer2, offer3, offer4, offer5};
 
-        ArrayList<Offer> fullTimeOffers = new ArrayList<>( Arrays.asList( myOffers )  );
-        fullTimeOffers.removeIf( p -> !p.isFullTime ); // removes the offer if the offer is NOT fulltime
+        ArrayList<Offer> fullTimeOffers = new ArrayList<>(Arrays.asList(myOffers));
+        fullTimeOffers.removeIf(p -> !p.isFullTime); // removes the offer if the offer is NOT fulltime
 
         System.out.println(fullTimeOffers.size());
 
-        ArrayList<Offer> localOffers = new ArrayList<>( Arrays.asList( myOffers )  );
-        localOffers.removeIf( p -> !( p.location.equals("VA") || p.location.equals("CA") ) ); // removes the offer if the offer is not from local area
+        ArrayList<Offer> localOffers = new ArrayList<>(Arrays.asList(myOffers));
+        localOffers.removeIf(p -> !(p.location.equals("VA") || p.location.equals("CA"))); // removes the offer if the offer is not from local area
 
         System.out.println(localOffers.size());
 
 
         for (Offer localOffer : localOffers) {
-            System.out.println(localOffer.companyName + " : " +localOffer.salary);
+            System.out.println(localOffer.companyName + " : " + localOffer.salary);
         }
-
-
-
 
 
     }

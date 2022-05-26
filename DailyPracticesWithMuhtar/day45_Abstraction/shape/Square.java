@@ -1,10 +1,10 @@
 package day45_Abstraction.shape;
 
-public class Square extends Shape{
+public class Square extends Shape {
 
     private double side;
 
-    public Square( double side) {
+    public Square(double side) {
         super("Square");
         setSide(side);
     }
@@ -14,8 +14,8 @@ public class Square extends Shape{
     }
 
     public void setSide(double side) {
-        if(side <= 0){
-          throw new RuntimeException("Invalid Side: "+side);
+        if (side <= 0) {
+            throw new RuntimeException("Invalid Side: " + side);
         }
         this.side = side;
     }
@@ -32,7 +32,7 @@ public class Square extends Shape{
     @Override
     public String toString() {
         return "Square{" +
-                super.toString()+
+                super.toString() +
                 "side=" + side +
                 '}';
     }

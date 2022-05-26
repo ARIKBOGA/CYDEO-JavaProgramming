@@ -23,12 +23,12 @@ public class Tester {
                 '}';
     }
 
-    public void smokeTesting(){
-        System.out.println(name+" is smoke testing");
+    public void smokeTesting() {
+        System.out.println(name + " is smoke testing");
     }
 
-    public void creatingTicket(){
-        System.out.println(name+" is creating ticket");
+    public void creatingTicket() {
+        System.out.println(name + " is creating ticket");
     }
 
 

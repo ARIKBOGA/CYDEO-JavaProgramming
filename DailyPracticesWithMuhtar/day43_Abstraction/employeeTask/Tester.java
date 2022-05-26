@@ -9,16 +9,16 @@ public final class Tester extends Employee {
 
     @Override
     public void work() {
-        System.out.println(getName()+" is testing the application");
+        System.out.println(getName() + " is testing the application");
     }
 
     @Override
     public void sleep() {
-        System.out.println(getName()+" sleeps 8 hours");
+        System.out.println(getName() + " sleeps 8 hours");
     }
 
-    public void bugReport(){
-        System.out.println(getName()+" is creating bug reports");
+    public void bugReport() {
+        System.out.println(getName() + " is creating bug reports");
     }
 
 

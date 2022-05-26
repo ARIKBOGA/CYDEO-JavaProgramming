@@ -9,7 +9,7 @@ public class CollectionsUtility {
     public static void main(String[] args) {
 
         ArrayList<Integer> list = new ArrayList<>();
-        list.addAll(Arrays.asList(10, 9, 8, 7,6,5,4,3,2,1));
+        list.addAll(Arrays.asList(10, 9, 8, 7, 6, 5, 4, 3, 2, 1));
 
         Collections.sort(list);
 
@@ -31,7 +31,7 @@ public class CollectionsUtility {
         ArrayList<Integer> list3 = new ArrayList<>();
         list3.addAll(Arrays.asList(10, 20, 30, 40, 50, 60, 70));
 
-        Collections.swap(list3, 4, 1 );
+        Collections.swap(list3, 4, 1);
 
         System.out.println(list3);
 
@@ -46,7 +46,7 @@ public class CollectionsUtility {
         System.out.println("-----------------------------------");
 
         ArrayList<Integer> list4 = new ArrayList<>();
-        list4.addAll(Arrays.asList(10,10,20,30,40,50,10,10,10));
+        list4.addAll(Arrays.asList(10, 10, 20, 30, 40, 50, 10, 10, 10));
 
         Collections.replaceAll(list4, 10, 1000);
 
@@ -54,7 +54,7 @@ public class CollectionsUtility {
 
         System.out.println("-------------------------------------");
 
-        int frequency = Collections.frequency(list4, 1000 );
+        int frequency = Collections.frequency(list4, 1000);
 
         System.out.println("frequency = " + frequency);
 
@@ -68,8 +68,6 @@ public class CollectionsUtility {
 
         System.out.println("countJava = " + countJava);
         System.out.println("countPython = " + countPython);
-
-
 
 
     }
