@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 
 public class Main {
     // 4.1
-    static Function<String, Integer> sumOfDigits = str ->
-            Arrays.stream(str.split(""))
-                    .mapToInt(Integer::valueOf)
-                    .sum();
+    static Function<String, Integer> sumOfDigits = str -> str.chars()
+            .filter(Character::isDigit)
+            .map(Character::getNumericValue)
+            .sum();
 
     // 4.2   (Most elegant way: ArrayList::new)
     static Function<Set<Integer>, List<Integer>> setToListIntegers = set -> new ArrayList<>(set);
@@ -52,7 +52,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Sum of digits of \"789\" = " + sumOfDigits.apply("789"));
+        System.out.println("Sum of digits of \"7kjdsh8dsf9ds\" = " + sumOfDigits.apply("7kjdsh8dsf9ds"));
 
         List<Integer> integers = setToListIntegers.apply(new HashSet<>(Set.of(1, 2, 3, 5, 4)));
         System.out.println("List of integers from a set: " + integers);
