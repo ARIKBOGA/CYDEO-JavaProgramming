@@ -37,10 +37,10 @@ public class Main {
     };
 
     // 4.6
-    static Function<int[], int[]> descendingSortedIntArray = arr ->
-            reverseIntArray.apply(Arrays.stream(arr)
-                    .sorted()
-                    .toArray());
+    static Function<int[], int[]> descendingSortedIntArray = arr -> {
+        Arrays.sort(arr);
+        return reverseIntArray.apply(arr);
+    };
 
     // 4.7
     static Function<String[], String[]> descendingSortedStringArray = arr ->
@@ -48,6 +48,17 @@ public class Main {
                     .sorted(Comparator.comparing(String::valueOf).reversed())
                     .collect(Collectors.toList())
                     .toArray(new String[0]);
+
+
+    // 4.8 This is my own task: Reverse an integer list
+    static Function<List<Integer>, List<Integer>> reverseIntList = list -> {
+        for (int i = 0; i < list.size() / 2; i++) {
+            int sum = list.get(i) + list.get(list.size() - i - 1);
+            list.set(i, list.get(list.size() - i - 1));
+            list.set(list.size() - i - 1, sum - list.get(i));
+        }
+        return list;
+    };
 
 
     public static void main(String[] args) {
@@ -60,7 +71,7 @@ public class Main {
         List<String> strings = setToListStrings.apply(new HashSet<>(Set.of("Burak", "Levent", "Kerem")));
         System.out.println("List of strings from a set: " + strings);
 
-        int[] arr = {1, 2, 3, 4};
+        int[] arr = {1, 3, 2, 4};
         System.out.println("Reversed int array: " + Arrays.toString(reverseIntArray.apply(arr)));
 
         String[] strArray = {"Burak", "Levent", "Kerem", "Osman", "Mert"};
@@ -71,5 +82,8 @@ public class Main {
 
         System.out.println("Array \"strArray\" in descending order: "
                 + Arrays.toString(descendingSortedStringArray.apply(strArray)));
+
+        List<Integer> list = new ArrayList<>(Arrays.asList(4, 6, 8, 1, 7));
+        System.out.println("reverseIntList.apply(list) = " + reverseIntList.apply(list));
     }
 }
