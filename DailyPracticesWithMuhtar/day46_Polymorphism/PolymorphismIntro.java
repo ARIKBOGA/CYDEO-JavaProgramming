@@ -85,6 +85,10 @@ public class PolymorphismIntro {
         animal.eat();
         // animal.play();
         // animal.bark();
+        System.out.println("=============================");
+        Dog dog1 = new Dog("Max", "Husky", 'M', 3, "Small", "White");
+        dog1.drink();
+        dog1.eat();
 
 
         Playable animal2 = new Dog("Max", "Husky", 'M', 3, "Small", "White");

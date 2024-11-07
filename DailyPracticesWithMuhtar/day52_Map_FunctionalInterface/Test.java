@@ -23,13 +23,8 @@ public class Test {
 
         // function2: create a function that can check if a person is eligible to buy alcohol
 
-        eligibleToBuyAlcohol = (age) -> {
-            if (age >= 21) {
-                System.out.println("Eligible to buy alcohol");
-            } else {
-                System.out.println("Not eligible to buy alcohol");
-            }
-        };
+        eligibleToBuyAlcohol = (age) -> System.out.println(age >= 21 ? "Eligible to buy alcohol" : "Not eligible to buy alcohol");
+
 
         eligibleToBuyAlcohol.apply(18);
 
@@ -53,6 +48,7 @@ public class Test {
         };
 
         divisibleBy3And5.apply(30);
+        divisibleBy3And5.apply(33);
 
 
     }

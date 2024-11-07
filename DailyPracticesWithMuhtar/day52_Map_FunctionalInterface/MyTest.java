@@ -13,9 +13,7 @@ public class MyTest {
         return a;
     };
 
-    static MyOwnFunctionalInterface lcm = (a, b) -> {
-        return a * b / gcd.result(a, b);
-    };
+    static MyOwnFunctionalInterface lcm = (a, b) -> a * b / gcd.result(a, b);
 
     public static void main(String[] args) {
 

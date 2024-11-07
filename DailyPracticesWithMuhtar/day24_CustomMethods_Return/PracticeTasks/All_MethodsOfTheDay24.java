@@ -2,17 +2,15 @@ package day24_CustomMethods_Return.PracticeTasks;
 
 
 import java.util.Arrays;
-
-import static R06_Methods.Anagram.isAnagram;
-import static R06_Methods.MethodsWithString_Reverse.reverse;
 import static day22_MultiDimensionalArrays.PracticeTasks.Task1_Reverse2D_SwappingAlgorithm.reverseArray;
+import static utilities.StringUtility.isAnagram;
 // These are the methods I wrote in replit tasks before in the same project on my Intellij.
 // Since I have defined it as public and static,
 //I can use it by calling it from within this file.
 
 public class All_MethodsOfTheDay24 {
     public static boolean isPalindrome(String word) {
-        return reverse(word).equals(word);
+        return new StringBuilder(word).reverse().equals(word);
     }
 
     public static int getFrequency(int[] arr, int n) {
@@ -60,7 +58,7 @@ public class All_MethodsOfTheDay24 {
 
     public static void main(String[] args) {
         System.out.println((isAnagram("listen", "silent")));
-        System.out.println(reverse("Cydeo"));
+        System.out.println(new StringBuilder("Cydeo").reverse());
         System.out.println(isPalindrome("level"));
         System.out.println(getFrequency(new int[]{1, 1, 1, 1, 1, 2, 2}, 1));
         System.out.println(Arrays.toString(addElement(new int[]{1, 2, 3, 4}, 99)));

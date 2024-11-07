@@ -9,6 +9,11 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
+
+        int[] arr = {1,2,3,4};
+
+        Arrays.stream(arr).boxed().collect(Collectors.toList());
+
         // task 1
         System.out.println("TASK 1\n-----------------------------------------");
         String[] stringArray = {"Ahmet", "Yusuf", "Yasin", "Burak", "Ahmet", "Yusuf", "Yasin", "Burak"};

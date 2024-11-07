@@ -3,11 +3,26 @@ package utilities;
 import java.util.Arrays;
 
 public class ArraysUtility {
+
+    public static <T> T[] getReversedArray(T[] array) {
+        for (int i = 0; i < array.length / 2; i++) {
+            T temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
+        }
+        return array;
+    }
+
     public static <T> void printEachElement(T[] arr) {
         for (T i : arr) {
             System.out.print(i + " ");
         }
         System.out.println();
+    }
+
+    public static <T> T getMax(T[] arr) {
+        Arrays.sort(arr);
+        return arr[arr.length - 1];
     }
 
     public static int getMax(int[] arr) {
