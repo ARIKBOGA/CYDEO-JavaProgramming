@@ -9,7 +9,8 @@ public class String_PalindromeSubString {
         for (int i = 1; i < str.length(); i++) {
             int j = i, l = i;
             while (--j >= 0 && ++l <= str.length() - 1) {
-                if (isPalindrome(str.substring(j, l))) {
+                String sbr = str.substring(j,l);
+                if (isPalindrome(sbr)) {
                     int length = str.substring(j, l).length();
                     if (length > max) {
                         max = length;
@@ -25,4 +26,9 @@ public class String_PalindromeSubString {
         return s.equals(new StringBuilder(s).reverse().toString());
     }
 
+    public static void main(String[] args) {
+        System.out.println("PalindromeSubstring(\"hannar\") = " + PalindromeSubstring("hannar"));
+        System.out.println("PalindromeSubstring(\"ana\") = " + PalindromeSubstring("ana"));
+        System.out.println("isPalindrome(\"ana\") = " + isPalindrome("ana"));
+    }
 }

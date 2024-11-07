@@ -18,20 +18,15 @@ public class String_PassWordValidation {
 
         boolean hasLowerCaseChar = password.matches("(.*[a-z].*)"),
                 hasUpperCaseChar = password.matches("(.*[A-Z].*)"),
-                hasDigits = password.matches("(.*[0-9].*)"),
+                hasDigits = password.matches("(.*\\d.*)"),
                 hasSpecialChar = password.matches("(.*[ -/, :-@].*)");
 
-        if(password.length() >= 6 && !password.contains(" ")) {
-            if (hasLowerCaseChar && hasUpperCaseChar && hasDigits && hasSpecialChar) {
-                return true;
-            }
+        if (password.length() >= 6 && !password.contains(" ")) {
+            return hasLowerCaseChar && hasUpperCaseChar && hasDigits && hasSpecialChar;
         }
 
-            return false;
+        return false;
     }
-
-
-
 
 
 }

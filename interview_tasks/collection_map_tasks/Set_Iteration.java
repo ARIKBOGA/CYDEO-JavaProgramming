@@ -24,9 +24,7 @@ public class Set_Iteration {
 
         System.out.println("-----------------------------------");
 
-        someObj.forEach( p -> {
-            System.out.println(p);
-        });
+        someObj.forEach(System.out::println);
 
     }
 

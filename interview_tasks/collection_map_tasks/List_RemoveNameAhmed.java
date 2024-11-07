@@ -1,7 +1,5 @@
 package collection_map_tasks;
 
-import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 
 public class List_RemoveNameAhmed {
@@ -14,18 +12,14 @@ public class List_RemoveNameAhmed {
 
     // solution 1
     public static List<String> remove1(List<String> names) {
-        Iterator<String> it = names.iterator();
-        while (it.hasNext()) {
-            if (it.next().equals("Ahmed"))
-                it.remove();
-        }
+        names.removeIf(s -> s.equals("Ahmed"));
         return names;
     }
 
 
     // solution 2
     public static List<String> remove2(List<String> names) {
-        names.removeAll(Arrays.asList("Ahmed"));
+        names.removeAll(List.of("Ahmed"));
         return names;
     }
 

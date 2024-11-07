@@ -6,27 +6,23 @@ import java.util.Map;
 public class Map_FrequencyOfCharacters {
 
     /*
-    Write a method that prints the frequency of each character from a String
+    Write a method that returns the frequency of each character from a String as a Map
      */
 
-    public static void FrequencyTest(String  str ) {
-
+    public static Map<Character, Integer> freqOfChars(String str) {
         Map<Character, Integer> map = new LinkedHashMap<>();
 
-        for (Character each : str.toCharArray()) {
-
-            if (map.containsKey(each)) {
-                map.put(each, map.get(each) + 1);
-            } else {
-                map.put(each, 1);
-            }
-
+        for (Character c : str.toCharArray()) {
+            if (map.containsKey(c))
+                map.put(c, map.get(c) + 1);
+            else map.put(c, 1);
         }
-
-        System.out.println(map);
-
+        return map;
     }
 
+    public static void main(String[] args) {
+        System.out.println("freqOfChars(\"burak\") = " + freqOfChars("burak"));
 
+    }
 
 }

@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 public class InterviewPractice {
 
+    public static void fizzBuzz(int num) {
+        for (int i = 1; i <= num; i++) {
+            if (i % 3 == 0 & i % 5 == 0) System.out.println("FizzBuzz");
+            else if (i % 5 == 0) System.out.println("Buzz");
+            else if (i % 3 == 0) System.out.println("Fizz");
+            else System.out.println(i);
+        }
+    }
+
     static Scanner scan = new Scanner(System.in);
 
     private static String reverse(String str) {
@@ -97,5 +106,7 @@ public class InterviewPractice {
 
         //System.out.println("isPalindrome(scan.nextLine()) = " + isPalindrome(scan.nextLine()));
         fibonacci(35);
+
+        fizzBuzz(35);
     }
 }

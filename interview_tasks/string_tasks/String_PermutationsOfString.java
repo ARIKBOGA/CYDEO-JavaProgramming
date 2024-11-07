@@ -20,6 +20,7 @@ public class String_PermutationsOfString {
         }
 
         System.out.println(partial);
+        System.out.println("partial.size() = " + partial.size());
 
     }
 

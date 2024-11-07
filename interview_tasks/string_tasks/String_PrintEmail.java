@@ -15,7 +15,7 @@ public class String_PrintEmail {
 
         //Solution 1:
 
-        Matcher match = Pattern.compile("[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+").matcher(sentence);
+        Matcher match = Pattern.compile("[a-zA-Z\\d_.+-]+@[a-zA-Z\\d-]+\\.[a-zA-Z\\d-.]+").matcher(sentence);
         String result1 = match.find() ? match.group() : null;
 
         System.out.println(result1);
@@ -26,6 +26,7 @@ public class String_PrintEmail {
         String result2 = sentence.replaceAll(".*\\b(\\w\\S*@\\S*\\w)\\b.*", "$1");
 
         System.out.println(result2);
+
 
 
 

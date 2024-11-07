@@ -1,5 +1,8 @@
 package array_tasks;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Array_SumOfLeftEqualToRight {
 
     /*
@@ -64,5 +67,30 @@ public class Array_SumOfLeftEqualToRight {
 
     }
 
+    public static List<Integer> gravityCenterIndexes(int[] arr) {
+        List<Integer> list = new ArrayList<>();
+        for (int i = 1; i < arr.length; i++) {
+            int l = i - 1, r = i + 1;
+            int leftSum = 0, rightSum = 0;
 
+            while (l > 0 || r < arr.length) {
+                if (l >= 0) leftSum += arr[l];
+                if (r < arr.length) rightSum += arr[r];
+                l--;
+                r++;
+            }
+            if (leftSum == rightSum) {
+                list.add(i);
+            }
+        }
+        return list;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 0, 7, -6, 5};
+
+        System.out.println(gravityCenterIndexes(arr));
+
+        System.out.println("\"\".hashCode() = " + "".hashCode());
+    }
 }
