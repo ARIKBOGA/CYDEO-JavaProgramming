@@ -59,10 +59,11 @@ public class StreamPractice {
 
         List<Integer> list4 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
         list4 = list4.stream()
-                .map(p -> p * 10)
-                .collect(Collectors.toList());
+                .map(p -> p * 3)
+                .filter(p -> p % 2 == 0)
+                .toList();
 
-        System.out.println(list4);
+        list4.forEach(System.out::println);
 
 
         List<String> days = new ArrayList<>(Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
