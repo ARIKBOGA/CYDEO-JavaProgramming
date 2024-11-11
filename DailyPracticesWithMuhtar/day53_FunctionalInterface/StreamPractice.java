@@ -63,6 +63,7 @@ public class StreamPractice {
                 .filter(p -> p % 2 == 0)
                 .toList();
 
+
         list4.forEach(System.out::println);
 
 
